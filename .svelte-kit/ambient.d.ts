@@ -38,6 +38,7 @@ declare module '$env/static/private' {
 	export const npm_config_noproxy: string;
 	export const MOTD_SHOWN: string;
 	export const HOME: string;
+	export const OLDPWD: string;
 	export const TERM_PROGRAM_VERSION: string;
 	export const SSH_TTY: string;
 	export const VSCODE_IPC_HOOK_CLI: string;
@@ -137,6 +138,7 @@ declare module '$env/dynamic/private' {
 		npm_config_noproxy: string;
 		MOTD_SHOWN: string;
 		HOME: string;
+		OLDPWD: string;
 		TERM_PROGRAM_VERSION: string;
 		SSH_TTY: string;
 		VSCODE_IPC_HOOK_CLI: string;
