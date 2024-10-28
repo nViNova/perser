@@ -96,16 +96,22 @@
     </div>
 </nav>
 
-<section class="hero mb-6 is-halfheight">
+<section class="hero mb-6">
   <div class="hero-body">
     <div class="container has-text-centered">
+      <!-- <figure class="image">
+        <img 
+            src="./titlelogo.png"
+            alt="Bootcamp 11.0: DCS welcomes Batch 2024"
+        />
+    </figure> -->
       <p class="title">Take apart, Take a part.</p>
       <p class="subtitle">We dont just write code; we write.</p>
     </div>
     
   </div>
   <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
+    <nav class="tabs mx-2 is-boxed is-fullwidth">
       <div class="container">
         <ul>
           <li class="is-active">
