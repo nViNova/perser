@@ -106,7 +106,7 @@
         />
     </figure> -->
       <p class="title">Take apart, Take a part.</p>
-      <p class="subtitle">We dont just write code; we write.</p>
+      <p class="subtitle">We dont just write code; <strong>we write.</strong></p>
     </div>
     
   </div>
