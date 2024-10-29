@@ -1,7 +1,10 @@
 import type { PageServerLoad } from './$types';
+import { fileURLToPath } from 'url';
 import { error } from '@sveltejs/kit';
 import fs from 'fs';
 import fm from 'front-matter';
+
+import path from 'path';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { toHast } from 'mdast-util-to-hast';
 import { getImageProperties, addImagePropertiesToHast, reduceHast } from '$lib/markdown';
@@ -14,9 +17,12 @@ interface Demo {
 	optional?: string;
 }
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export const load: PageServerLoad = async ({ params }) => {
 	try {
-		const post = fm<Demo>(fs.readFileSync((`static/_posts/articles/${params.slug}.md`), 'utf-8'));
+		const post = fm<Demo>(fs.readFileSync(path.join(__dirname, `_posts/articles/${params.slug}.md`), 'utf-8'));
 
 		console.log(`processing markdown _posts/articles/${params.slug}.md`);
 
