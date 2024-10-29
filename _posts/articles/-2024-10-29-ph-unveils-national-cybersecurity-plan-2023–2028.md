@@ -5,6 +5,7 @@ author: Euri Barbon
 editor: Abram Marcelo
 date: 2024-10-16T00:00:00.000Z
 thumbnail: /images/uploads/94_big.jpg
+attribution: DICT building at Quezon City
 tags:
   - Cybersecurity;DICT;DOST
 references: >-
