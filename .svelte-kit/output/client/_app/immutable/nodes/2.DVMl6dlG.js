@@ -1,1 +1,0 @@
-import{a,t as o}from"../chunks/disclose-version.WZ7vPAJO.js";import{n as p}from"../chunks/runtime.BfpIgs2Z.js";var r=o('<h1>Tite</h1> <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>',1);function i(t){var e=r();p(2),a(t,e)}export{i as component};

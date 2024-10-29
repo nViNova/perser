@@ -936,6 +936,12 @@ function unsubscribe_stores(store_values) {
     store_values[store_name][1]();
   }
 }
+function ensure_array_like(array_like_or_iterator) {
+  if (array_like_or_iterator) {
+    return array_like_or_iterator.length !== void 0 ? array_like_or_iterator : Array.from(array_like_or_iterator);
+  }
+  return [];
+}
 export {
   render as A,
   push as B,
@@ -946,6 +952,7 @@ export {
   store_get as G,
   HYDRATION_ERROR as H,
   unsubscribe_stores as I,
+  ensure_array_like as J,
   set_active_reaction as a,
   set_active_effect as b,
   active_reaction as c,
