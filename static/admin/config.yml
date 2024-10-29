@@ -4,29 +4,49 @@ backend:
 
 media_folder: static/media/uploads
 public_folder: /images/uploads
+site_url: https://theupparser.netlify.app/
+display_url: https://theupparser.netlify.app/
+logo_url: https://theupparser.netlify.app/favicon.svg
+
 
 collections:
   - name: parsearch # Used in routes, e.g., /admin/collections/article
     label: Parsearch # Used in the UI
     folder: _posts/articles # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{field}}-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: Layout", name: layout, widget: hidden, default: parsearch }
-      - { label: Title", name: title, widget: string }
+      - { label: Layout, name: layout, widget: hidden, default: parsearch }
+      - { label: Title, name: title, widget: string }
+      - { label: Author/s, name: author, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
 
-  - name: feature # Used in routes, e.g., /admin/collections/article
+  - name: feature # Used in routes
     label: Feature # Used in the UI
     folder: _posts/features # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: 'Feature-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: '{{layout}}-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: Layout", name: layout, widget: hidden, default: feature }
-      - { label: Title", name: title, widget: string }
+      - { label: Layout, name: layout, widget: hidden, default: feature }
+      - { label: Title, name: title, widget: string }
+      - { label: Author/s, name: author, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Featured Image, name: thumbnail, widget: image }
+      - { label: Tags, name: tags, widget: list }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: announcement # Used in routes
+    label: Announcement # Used in the UI
+    folder: _posts/announcements # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{layout}}-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: Layout, name: layout, widget: hidden, default: annohncement }
+      - { label: Title, name: title, widget: string }
+      - { label: Type, name: type, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
       - { label: Tags, name: tags, widget: list }
