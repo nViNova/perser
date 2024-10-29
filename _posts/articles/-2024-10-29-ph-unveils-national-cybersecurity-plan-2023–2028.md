@@ -6,6 +6,9 @@ editor: Abram Marcelo
 date: 2024-10-16T00:00:00.000Z
 thumbnail: /images/uploads/94_big.jpg
 attribution: DICT building at Quezon City
+description: "On April 4, 2024, the Philippines launched the National
+  Cybersecurity Plan (NCSP) 2023–2028 under the Executive Order #58 to enhance
+  the nation’s cybersecurity landscape."
 tags:
   - Cybersecurity;DICT;DOST
 references: >-
