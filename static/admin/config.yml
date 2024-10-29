@@ -22,6 +22,7 @@ collections:
       - { label: Editor/s, name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
+      - { label: Attribution, name: attribution, widget: image }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
@@ -39,6 +40,7 @@ collections:
       - { label: Editor/s, name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
+      - { label: Attribution, name: attribution, widget: string }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
