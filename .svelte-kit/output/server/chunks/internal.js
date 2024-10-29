@@ -473,7 +473,7 @@ const options = {
   root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en" data-theme="light">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.svg" />\n		<title>The UP Parser</title>\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!doctype html>\n<html lang="en" data-theme="light">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.svg" />\n		<title>The UP Parser</title>\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"><\/script>\n		<script>\n			import CMS from "decap-cms-app";\n			// Initialize the CMS object\n			CMS.init();\n			// Now the registry is available via the CMS object.\n			CMS.registerPreviewTemplate("my-template", MyTemplate);\n		<\/script>\n		' + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div style="display: contents">' + body + '</div>\n		<script>\n			if (window.netlifyIdentity) {\n			  window.netlifyIdentity.on("init", (user) => {	\n				if (!user) {\n				  window.netlifyIdentity.on("login", () => {\n					document.location.href = "/admin/";\n				  });\n				}\n			  });\n			}\n		  <\/script>\n	</body>\n</html>\n',
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -545,7 +545,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "flfzuf"
+  version_hash: "11luzen"
 };
 async function get_hooks() {
   return {};
