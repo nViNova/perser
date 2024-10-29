@@ -16,6 +16,10 @@
     "file": "chunks/index.js",
     "name": "index"
   },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index"
+  },
   "_internal.js": {
     "file": "chunks/internal.js",
     "name": "internal",
@@ -50,6 +54,7 @@
     "imports": [
       "_index.js",
       "_internal.js",
+      "_index2.js",
       "_exports.js"
     ]
   },
@@ -63,6 +68,27 @@
     ],
     "css": [
       "_app/immutable/assets/_page.DqSMxWOh.css"
+    ]
+  },
+  "src/routes/article/[slug]/+page.server.ts": {
+    "file": "entries/pages/article/_slug_/_page.server.ts.js",
+    "name": "entries/pages/article/_slug_/_page.server.ts",
+    "src": "src/routes/article/[slug]/+page.server.ts",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "src/routes/article/[slug]/+page.svelte": {
+    "file": "entries/pages/article/_slug_/_page.svelte.js",
+    "name": "entries/pages/article/_slug_/_page.svelte",
+    "src": "src/routes/article/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CTIODSV0.css"
     ]
   }
 }

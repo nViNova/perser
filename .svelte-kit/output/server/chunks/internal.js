@@ -1,4 +1,4 @@
-import { H as HYDRATION_ERROR, g as get_next_sibling, d as define_property, a as set_active_reaction, b as set_active_effect, i as is_array, c as active_reaction, e as active_effect, f as init_operations, h as get_first_child, j as HYDRATION_START, k as HYDRATION_END, l as hydration_failed, m as clear_text_content, o as array_from, p as effect_root, q as create_text, r as branch, t as push, u as pop, v as component_context, w as get, x as set, y as flush_sync, z as mutable_source, A as render, B as push$1, C as setContext, E as pop$1 } from "./index.js";
+import { H as HYDRATION_ERROR, g as get_next_sibling, d as define_property, a as set_active_reaction, b as set_active_effect, i as is_array, c as active_reaction, e as active_effect, f as init_operations, h as get_first_child, j as HYDRATION_START, k as HYDRATION_END, l as hydration_failed, m as clear_text_content, o as array_from, p as effect_root, q as is_passive_event, r as create_text, t as branch, u as push, v as pop, w as component_context, x as get, y as set, z as flush_sync, A as mutable_source, B as render, C as push$1, E as setContext, F as pop$1 } from "./index.js";
 let base = "";
 let assets = base;
 const initial = { base, assets };
@@ -143,10 +143,6 @@ function assign_nodes(start, end) {
     effect.nodes_start = start;
     effect.nodes_end = end;
   }
-}
-const PASSIVE_EVENTS = ["touchstart", "touchmove"];
-function is_passive_event(name) {
-  return PASSIVE_EVENTS.includes(name);
 }
 function mount(component, options2) {
   return _mount(component, options2);
@@ -545,7 +541,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "19y1boz"
+  version_hash: "p3oe6q"
 };
 async function get_hooks() {
   return {};

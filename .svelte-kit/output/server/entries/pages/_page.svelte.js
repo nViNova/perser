@@ -1,4 +1,4 @@
-import { J as ensure_array_like } from "../../chunks/index.js";
+import { L as ensure_array_like } from "../../chunks/index.js";
 function _page($$payload) {
   let articles = [1, 2, 3, 4, 5, 6, 7];
   const each_array = ensure_array_like(articles);

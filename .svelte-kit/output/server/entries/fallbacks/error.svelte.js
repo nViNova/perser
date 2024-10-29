@@ -1,20 +1,5 @@
-import { F as getContext, G as store_get, I as unsubscribe_stores, E as pop, B as push } from "../../chunks/index.js";
+import { G as getContext, I as escape_html, J as store_get, K as unsubscribe_stores, F as pop, C as push } from "../../chunks/index.js";
 import "../../chunks/exports.js";
-const CONTENT_REGEX = /[&<]/g;
-function escape_html(value, is_attr) {
-  const str = String(value ?? "");
-  const pattern = CONTENT_REGEX;
-  pattern.lastIndex = 0;
-  let escaped = "";
-  let last = 0;
-  while (pattern.test(str)) {
-    const i = pattern.lastIndex - 1;
-    const ch = str[i];
-    escaped += str.substring(last, i) + (ch === "&" ? "&amp;" : ch === '"' ? "&quot;" : "&lt;");
-    last = i + 1;
-  }
-  return escaped + str.substring(last);
-}
 function get(key, parse = JSON.parse) {
   try {
     return parse(sessionStorage[key]);
