@@ -28,7 +28,7 @@
     }
 
     .navbar {
-      --bulma-navbar-background-color: hsl(0,0%,97%);
+      --bulma-navbar-background-color: hsl(54,98%,50%);
     }
 
     .tabs {
