@@ -18,11 +18,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: Layout, name: layout, widget: hidden, default: parsearch }
       - { label: Title, name: title, widget: string }
-      - { label: Author/s, name: author, widget: string }
-      - { label: Editor/s, name: editor, widget: string }
+      - { label: Author/s (add and if multiple), name: author, widget: string }
+      - { label: Editor/s (add and if multiple), name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
-      - { label: Attribution, name: attribution, widget: image }
+      - { label: Attribution, name: attribution, widget: string }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
@@ -36,8 +36,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: Layout, name: layout, widget: hidden, default: feature }
       - { label: Title, name: title, widget: string }
-      - { label: Author/s, name: author, widget: string }
-      - { label: Editor/s, name: editor, widget: string }
+      - { label: Author/s (add and if multiple), name: author, widget: string }
+      - { label: Editor/s (add and if multiple), name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: thumbnail, widget: image }
       - { label: Attribution, name: attribution, widget: string }
