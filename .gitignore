@@ -19,3 +19,10 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.svelte-kit/generated/server/internal.js
+.svelte-kit/output/client/.vite/manifest.json
+.svelte-kit/output/client/_app/version.json
+.svelte-kit/output/server/manifest-full.js
+.svelte-kit/output/server/manifest.js
+.svelte-kit/output/server/chunks/internal.js
+.svelte-kit/output/server/nodes/1.js
