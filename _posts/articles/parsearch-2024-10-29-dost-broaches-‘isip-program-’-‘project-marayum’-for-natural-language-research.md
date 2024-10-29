@@ -7,6 +7,11 @@ date: 2024-09-18T00:00:00.000Z
 thumbnail: /images/uploads/1_sz2iwh885h_4b4olhsv_qq-1-.webp
 attribution: DOST and AI-related institutions discuss Large Language Models for
   Philippine Languages. Photo fom DOST-PCIEERD.
+description: In August 2024, the DOST Philippine Council for Industry, Energy,
+  and Emerging Technology Research and Development (PCIEERD) held a
+  multi-disciplinary meeting tackling various projects to lay out a roadmap for
+  natural language processing (NLP) and large language model development focused
+  on Philippine languages.
 tags:
   - NLP;DOST;Project-Marayum
 references: DOST-PCIEERD. (2024). DOST leads charge for natural language
