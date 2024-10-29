@@ -1,5 +1,5 @@
 ---
-layout: parsearch
+type: parsearch
 title: DOST broaches ‘ISIP Program,’ ‘Project Marayum’ for natural language research
 author: Abram Josh Marcelo
 editor: Elijah Mejilla

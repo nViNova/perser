@@ -7,7 +7,7 @@ import { fromMarkdown } from 'mdast-util-from-markdown';
 import { toHast } from 'mdast-util-to-hast';
 import { getImageProperties, addImagePropertiesToHast, reduceHast } from '$lib/markdown';
 
-interface Demo {
+interface article {
 	title: string;
 	description: string;
 	image: string;
@@ -17,7 +17,7 @@ interface Demo {
 
 export const load: PageServerLoad = async ({ params }) => {
 	try {
-		const post = fm<Demo>(fs.readFileSync(`_posts/articles/${params.slug}.md`, 'utf-8'));
+		const post = fm<article>(fs.readFileSync(`_posts/articles/${params.slug}.md`, 'utf-8'));
 
 		console.log(`processing markdown _posts/articles/${params.slug}.md`);
 
