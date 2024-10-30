@@ -61,16 +61,12 @@
     <div id="menubar" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="/">
-              Parsearch News
+              News
             </a>
       
             <a class="navbar-item" href="/">
               Features
             </a>
-
-            <a class="navbar-item" href="/">
-                HoDCS
-              </a>
       
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="/">
@@ -115,13 +111,10 @@
             <a>Home</a>
           </li>
           <li>
-            <a>Parsearch News</a>
+            <a>News</a>
           </li>
           <li>
-            <a>Feature</a>
-          </li>
-          <li>
-            <a>HoDCS</a>
+            <a>Features</a>
           </li>
           <li>
             <a>Announcements</a>
