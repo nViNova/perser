@@ -13,6 +13,7 @@
 
 
 {#if hast && hast.children}
+	<!-- <div class="container"> -->
 	{#each hast.children as child}
 		{#if child.type === 'element'}
 			{#if child.tagName === 'img' && child.properties && child.properties.src}
@@ -32,7 +33,9 @@
 				>
 			{/if}
 		{:else if child.type === 'text'}
-			{child.value}
+		<p class="card-content">{child.value}</p>
+		<p class="card-content mb-3"></p>
 		{/if}
 	{/each}
+	<!-- </div> -->
 {/if}

@@ -102,12 +102,6 @@
 <section class="hero mb-6">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <!-- <figure class="image">
-        <img 
-            src="./titlelogo.png"
-            alt="Bootcamp 11.0: DCS welcomes Batch 2024"
-        />
-    </figure> -->
       <p class="title">Take apart, Take a part.</p>
       <p class="subtitle">We dont just write code; <strong>we write.</strong></p>
     </div>

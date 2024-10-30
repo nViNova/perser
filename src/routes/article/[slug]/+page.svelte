@@ -48,23 +48,41 @@
       --bulma-title-color: hsl(0deg,0%,28%);
     }
 
+    .thumbnail {
+      display: block;
+      max-width:60%;
+      max-height:20%;
+      width: auto;
+      height: auto;
+    }
 
-</style>    
 
-<img src='/{data.thumbnail.src}' alt={data.attribution} width={data.thumbnail.width} height={data.thumbnail.height} />
+</style>      
+
+<div class="container is-max-desktop">
 
 <p class="title is-2 mb-3">{data.title}</p>
-<p class="mb-3 has-text-weight-light">by {data.author}</p>
-<p class="mb-3 has-text-weight-light">Edited by {data.editor}</p>
 
+
+<p class="mb-3 has-text-weight-medium">by {data.author}; Edited by {data.editor}</p>
+
+<!-- <figure class="image is-16by9"> -->
+  <img class="thumbnail" src='/{data.thumbnail.src}' alt={data.attribution} width={data.thumbnail.width} height={data.thumbnail.height} />
+<p class="mb-3 has-text-weight-light">{data.attribution}</p>
+  <!-- </figure> -->
+
+
+<Markdown hast={data.body} {imageOptions} />
+<p class="title is-4 mb-3">References</p>
+<Markdown hast={data.references} {imageOptions} />
+
+</div>
 
 <!-- <Image
-	src={data.image.src}
+	src={data.image.src}  
 	alt="demo"
 	width={data.image.width}
 	height={data.image.height}
 	options={imageOptions}
 /> -->
 
-<Markdown hast={data.body} {imageOptions} />
-<Markdown hast={data.references} {imageOptions} />
