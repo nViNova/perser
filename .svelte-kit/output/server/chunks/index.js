@@ -129,8 +129,6 @@ function mark_reactions(signal, status) {
 const HYDRATION_START = "[";
 const HYDRATION_END = "]";
 const HYDRATION_ERROR = {};
-const ELEMENT_IS_NAMESPACED = 1;
-const ELEMENT_PRESERVE_ATTRIBUTE_CASE = 1 << 1;
 var $window;
 var first_child_getter;
 var next_sibling_getter;
@@ -853,36 +851,6 @@ const VOID_ELEMENT_NAMES = [
 function is_void(name) {
   return VOID_ELEMENT_NAMES.includes(name) || name.toLowerCase() === "!doctype";
 }
-const DOM_BOOLEAN_ATTRIBUTES = [
-  "allowfullscreen",
-  "async",
-  "autofocus",
-  "autoplay",
-  "checked",
-  "controls",
-  "default",
-  "disabled",
-  "formnovalidate",
-  "hidden",
-  "indeterminate",
-  "ismap",
-  "loop",
-  "multiple",
-  "muted",
-  "nomodule",
-  "novalidate",
-  "open",
-  "playsinline",
-  "readonly",
-  "required",
-  "reversed",
-  "seamless",
-  "selected",
-  "webkitdirectory"
-];
-function is_boolean_attribute(name) {
-  return DOM_BOOLEAN_ATTRIBUTES.includes(name);
-}
 const PASSIVE_EVENTS = ["touchstart", "touchmove"];
 function is_passive_event(name) {
   return PASSIVE_EVENTS.includes(name);
@@ -964,7 +932,6 @@ function get_parent_context(component_context2) {
 const BLOCK_OPEN = `<!--${HYDRATION_START}-->`;
 const BLOCK_CLOSE = `<!--${HYDRATION_END}-->`;
 const EMPTY_COMMENT = `<!---->`;
-const INVALID_ATTR_NAME_CHAR_REGEX = /[\s'">/=\u{FDD0}-\u{FDEF}\u{FFFE}\u{FFFF}\u{1FFFE}\u{1FFFF}\u{2FFFE}\u{2FFFF}\u{3FFFE}\u{3FFFF}\u{4FFFE}\u{4FFFF}\u{5FFFE}\u{5FFFF}\u{6FFFE}\u{6FFFF}\u{7FFFE}\u{7FFFF}\u{8FFFE}\u{8FFFF}\u{9FFFE}\u{9FFFF}\u{AFFFE}\u{AFFFF}\u{BFFFE}\u{BFFFF}\u{CFFFE}\u{CFFFF}\u{DFFFE}\u{DFFFF}\u{EFFFE}\u{EFFFF}\u{FFFFE}\u{FFFFF}\u{10FFFE}\u{10FFFF}]/u;
 const RAW_TEXT_ELEMENTS = ["textarea", "script", "style", "title"];
 function element(payload, tag, attributes_fn = noop, children_fn = noop) {
   payload.out += "<!---->";
@@ -1021,34 +988,6 @@ function attr(name, value, is_boolean = false) {
   const assignment = is_boolean ? "" : `="${escape_html(normalized, true)}"`;
   return ` ${name}${assignment}`;
 }
-function spread_attributes(attrs, classes, styles, flags = 0) {
-  if (classes) {
-    const classlist = attrs.class ? [attrs.class] : [];
-    for (const key in classes) {
-      if (classes[key]) {
-        classlist.push(key);
-      }
-    }
-    attrs.class = classlist.join(" ");
-  }
-  let attr_str = "";
-  let name;
-  const is_html = (flags & ELEMENT_IS_NAMESPACED) === 0;
-  const lowercase = (flags & ELEMENT_PRESERVE_ATTRIBUTE_CASE) === 0;
-  for (name in attrs) {
-    if (typeof attrs[name] === "function") continue;
-    if (name[0] === "$" && name[1] === "$") continue;
-    if (INVALID_ATTR_NAME_CHAR_REGEX.test(name)) continue;
-    if (lowercase) {
-      name = name.toLowerCase();
-    }
-    attr_str += attr(name, attrs[name], is_html && is_boolean_attribute(name));
-  }
-  return attr_str;
-}
-function stringify(value) {
-  return typeof value === "string" ? value : value == null ? "" : value + "";
-}
 function store_get(store_values, store_name, store) {
   if (store_name in store_values && store_values[store_name][0] === store) {
     return store_values[store_name][2];
@@ -1088,9 +1027,7 @@ export {
   unsubscribe_stores as K,
   ensure_array_like as L,
   attr as M,
-  spread_attributes as N,
-  stringify as O,
-  element as P,
+  element as N,
   set_active_reaction as a,
   set_active_effect as b,
   active_reaction as c,

@@ -8,11 +8,16 @@ import { toHast } from 'mdast-util-to-hast';
 import { getImageProperties, addImagePropertiesToHast, reduceHast } from '$lib/markdown';
 
 interface article {
+	type: string;
 	title: string;
+	author: string;
+	editor: string;
+	date: string;
+	thumbnail: string;
+	attribution: string;
 	description: string;
-	image: string;
-	draft: boolean;
-	optional?: string;
+	tags: string;
+	references: string;
 }
 
 export const load: PageServerLoad = async ({ params }) => {
@@ -20,16 +25,23 @@ export const load: PageServerLoad = async ({ params }) => {
 		const post = fm<article>(fs.readFileSync(`_posts/articles/${params.slug}.md`, 'utf-8'));
 
 		console.log(`processing markdown _posts/articles/${params.slug}.md`);
-
+		
+		
         
 		if (post) {
 			const hast = toHast(fromMarkdown(post.body));
 
 			return {
+				type: post.attributes.type,
 				title: post.attributes.title,
+				author: post.attributes.author,
+				editor: post.attributes.editor,
+				date: post.attributes.date,
+				thumbnail: await getImageProperties(post.attributes.thumbnail),
+				attribution: post.attributes.attribution,
 				description: post.attributes.description,
-				image: await getImageProperties(post.attributes.image),
-				optional: post.attributes.optional,
+				tags: post.attributes.tags,
+				references: toHast(fromMarkdown(post.attributes.references)),
 				body: hast && (await addImagePropertiesToHast(reduceHast(hast)))
 			};
 		}
