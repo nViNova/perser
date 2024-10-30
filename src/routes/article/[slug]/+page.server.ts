@@ -24,9 +24,7 @@ export const load: PageServerLoad = async ({ params }) => {
 	try {
 		const post = fm<article>(fs.readFileSync(`_posts/articles/${params.slug}.md`, 'utf-8'));
 
-		console.log(`processing markdown _posts/articles/${params.slug}.md`);
-		
-		
+		// console.log(`processing markdown _posts/articles/${params.slug}.md`);
         
 		if (post) {
 			const hast = toHast(fromMarkdown(post.body));

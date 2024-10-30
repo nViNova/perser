@@ -4,7 +4,7 @@ title: DOST broaches ‘ISIP Program,’ ‘Project Marayum’ for natural langu
 author: Abram Josh Marcelo
 editor: Elijah Mejilla
 date: 2024-09-18T00:00:00.000Z
-thumbnail: static/media/uploads/1_sz2iwh885h_4b4olhsv_qq-1-.webp
+thumbnail: media/uploads/1_sz2iwh885h_4b4olhsv_qq-1-.webp
 attribution: DOST and AI-related institutions discuss Large Language Models for
   Philippine Languages. Photo fom DOST-PCIEERD.
 description: In August 2024, the DOST Philippine Council for Industry, Energy,

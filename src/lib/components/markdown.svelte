@@ -23,7 +23,7 @@
 					height={child.properties.height}
 					options={imageOptions}
 				/> -->
-				<img src={child.properties.src.slice(6)} alt={child.properties.alt} width={child.properties.width} height={child.properties.height} />
+				<img src='/{child.properties.src}' alt={child.properties.alt} width={child.properties.width} height={child.properties.height} />
 			{:else if child.tagName === 'a' && child.properties}
 				<a href={child.properties.href}><Markdown hast={child} {imageOptions} /></a>
 			{:else}

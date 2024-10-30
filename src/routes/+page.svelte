@@ -88,6 +88,9 @@
                   Join Us
                 </a>
                 <hr class="navbar-divider">
+                <a class="navbar-item" href="admin/#/">
+                  Contribute
+                </a>
                 <a class="navbar-item" href="/">
                   Report an issue
                 </a>

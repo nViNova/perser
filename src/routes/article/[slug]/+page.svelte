@@ -51,7 +51,7 @@
 
 </style>    
 
-<img src='{data.thumbnail.src.substring(6)}' alt={data.attribution} width={data.thumbnail.width} height={data.thumbnail.height} />
+<img src='/{data.thumbnail.src}' alt={data.attribution} width={data.thumbnail.width} height={data.thumbnail.height} />
 
 <p class="title is-2 mb-3">{data.title}</p>
 <p class="mb-3 has-text-weight-light">by {data.author}</p>

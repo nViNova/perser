@@ -988,6 +988,9 @@ function attr(name, value, is_boolean = false) {
   const assignment = is_boolean ? "" : `="${escape_html(normalized, true)}"`;
   return ` ${name}${assignment}`;
 }
+function stringify(value) {
+  return typeof value === "string" ? value : value == null ? "" : value + "";
+}
 function store_get(store_values, store_name, store) {
   if (store_name in store_values && store_values[store_name][0] === store) {
     return store_values[store_name][2];
@@ -1027,7 +1030,8 @@ export {
   unsubscribe_stores as K,
   ensure_array_like as L,
   attr as M,
-  element as N,
+  stringify as N,
+  element as O,
   set_active_reaction as a,
   set_active_effect as b,
   active_reaction as c,
