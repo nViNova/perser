@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: nViNova/perser
-  branch: main # Branch to update (optional; defaults to master)
+  branch: restructure # Branch to update (optional; defaults to master)
   squash_merges: true
 
 media_folder: static/media/uploads
