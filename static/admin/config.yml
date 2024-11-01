@@ -5,6 +5,7 @@ backend:
   squash_merges: true
   base_url: https://theupparser.pages.dev
   auth_endpoint: /api/auth
+  site_domain: https://theupparser.pages.dev
 
 media_folder: static/media/uploads
 public_folder: /media/uploads
