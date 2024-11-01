@@ -1,9 +1,14 @@
 <script>
-    let name = 'person';
-    let src = 'https://media1.tenor.com/m/t0uxZ-qpK8kAAAAd/rivesid-obama.gif';
-    let articles = $state([1,2,3,4,5,6,7]);
+	import { siteTitle } from '$lib/config';
+
+	export let data;
+
+	let articles = $state([1,2,3,4,5,6,7]);
 </script>
 
+<svelte:head>
+	<title>{siteTitle}</title>
+</svelte:head>
 
 <style>
     @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
@@ -43,90 +48,6 @@
 
 
 </style>    
-
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/" aria-label="home">
-        <img src="./favicon.svg" alt="logo">
-      </a>
-  
-      <a role="button" href="/" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menubar">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="menubar" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item" href="/">
-              News
-            </a>
-      
-            <a class="navbar-item" href="/">
-              Features
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="/">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="/">
-                  About
-                </a>
-                <a class="navbar-item" href="/">
-                  Contact Us
-                </a>
-                <a class="navbar-item" href="/">
-                  Join Us
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item" href="admin/#/">
-                  Contribute
-                </a>
-                <a class="navbar-item" href="/">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-    </div>
-</nav>
-
-<section class="hero mb-6">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title">Take apart, Take a part.</p>
-      <p class="subtitle">We dont just write code; <strong>we write.</strong></p>
-    </div>
-    
-  </div>
-  <div class="hero-foot">
-    <nav class="tabs mx-2 is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li class="is-active">
-            <a>Home</a>
-          </li>
-          <li>
-            <a>News</a>
-          </li>
-          <li>
-            <a>Features</a>
-          </li>
-          <li>
-            <a>Announcements</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</section>
 
 <div class="columns mx-6">
 
