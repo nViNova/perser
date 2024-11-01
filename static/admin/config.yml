@@ -25,11 +25,11 @@ collections:
       - { label: Author/s (add 'and' if multiple), name: author, widget: string }
       - { label: Editor/s (add 'and' if multiple), name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
-      - { label: Updayte Date, name: updated, widget: datetime }
+      - { label: Update Date, name: updated, widget: datetime }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
-      - { label: Tags, name: tags, widget: list }
+      - { label: Tags, name: categories, widget: list }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
 
@@ -43,9 +43,9 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Type, name: type, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
-      - { label: Featured Image, name: thumbnail, widget: image }
+      - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
-      - { label: Hook Sentence, name: description, widget: string }
-      - { label: Tags, name: tags, widget: list }
+      - { label: Excerpt, name: excerpt, widget: string }
+      - { label: Tags, name: categories, widget: list }
       - { label: Body, name: body, widget: markdown }
       
