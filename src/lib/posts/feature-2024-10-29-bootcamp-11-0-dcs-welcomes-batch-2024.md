@@ -4,6 +4,7 @@ title: "Bootcamp 11.0: DCS welcomes Batch 2024"
 author: Eriene Galinato and Gabriel Inigo De Guzman
 editor: Abram Marcelo
 date: 2024-09-24T00:00:00.000Z
+updated: 2024-09-24T00:00:00.000Z
 coverImage: /media/uploads/1_bs4bd25l7fwkgvt6vaanbg.webp
 attribution: Graphics by Stephen Gonda
 excerpt: "Last August 7–9, the incoming Department of Computer Science held
@@ -12,8 +13,11 @@ excerpt: "Last August 7–9, the incoming Department of Computer Science held
   Engineers Centennial Hall (UP AECH), and takes inspiration from Alice in
   Wonderland. The event opened with a short speech from this year’s Overall
   Head, Drei Ragasa."
-tags:
-  - DCS;UPD;Bootcamp;Batch-2024
+categories:
+  - DCS
+  - UPD
+  - Bootcamp
+  - Batch-2024
 references: The CS Network UP Diliman
 ---
 Last August 7–9, the incoming Department of Computer Science held Bootcamp 11.0: the annual three-day introductory event for freshies, shiftees, and transferees (FSTs). Bootcamp’s 11th year took place at the UP Alumni Engineers Centennial Hall (UP AECH), and takes inspiration from Alice in Wonderland. The event opened with a short speech from this year’s Overall Head, Drei Ragasa.

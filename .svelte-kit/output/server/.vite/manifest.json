@@ -126,9 +126,6 @@
     "src": "src/routes/+page.js"
   },
   "src/routes/+page.svelte": {
-    "css": [
-      "_app/immutable/assets/_page.RO_etTy8.css"
-    ],
     "file": "entries/pages/_page.svelte.js",
     "imports": [
       "_ssr.js",

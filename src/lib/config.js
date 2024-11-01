@@ -11,7 +11,7 @@ export const siteURL = 'theupparser.pages.dev'
 export const siteLink = 'https://github.com/nViNova/perser'
 export const siteAuthor = 'The UP Parser Team'
 
-// Controls how many posts are shown per page on the main blog index pages
+// Controls how many posts are shown per page on the main news index pages
 export const postsPerPage = 10
 
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
@@ -19,9 +19,6 @@ export const navItems = [
 	{
 		title: 'News',
 		route: '/news'
-	}, {
-		title: 'Features',
-		route: '/features'
 	}, {
 		title: 'About',
 		route: '/about'

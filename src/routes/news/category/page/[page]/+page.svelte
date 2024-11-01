@@ -31,5 +31,5 @@
 
 	<p>Sorry, no posts to show here.</p>
 
-	<a href="/news">Back to blog</a>
+	<a href="/news">Back to news</a>
 {/if}

@@ -1,4 +1,4 @@
-<!-- Renders any page at /blog/category/* -->
+<!-- Renders any page at /news/category/* -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'

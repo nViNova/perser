@@ -16,7 +16,7 @@
       ".svelte-kit/generated/client-optimized/nodes/12.js",
       ".svelte-kit/generated/client-optimized/nodes/13.js"
     ],
-    "file": "_app/immutable/entry/app.BrbXfk5V.js",
+    "file": "_app/immutable/entry/app.c5L7shCx.js",
     "imports": [
       "_preload-helper.0HuHagjb.js",
       "_scheduler.u44qVECu.js",
@@ -26,49 +26,49 @@
     "src": ".svelte-kit/generated/client-optimized/app.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/nodes/0.MMF4pVnv.js",
+    "file": "_app/immutable/nodes/0.iGyuiT_i.js",
     "imports": [
       "_index.oiCz_B55.js",
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_singletons.k00UwdgG.js",
+      "_singletons.Gu_IjKwf.js",
       "_each.-oqiv04n.js",
-      "_config.Jl7_C1bR.js"
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.60PeP3Sm.js",
+    "file": "_app/immutable/nodes/1.3EwIgVkL.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_singletons.k00UwdgG.js"
+      "_singletons.Gu_IjKwf.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/10.js": {
-    "file": "_app/immutable/nodes/10.BFt46qEm.js",
+    "file": "_app/immutable/nodes/10.kXF79bA1.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_Pagination.K5Bnr8eO.js",
-      "_config.Jl7_C1bR.js"
+      "_Pagination.Q7M49Z-M.js",
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/10.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/11.js": {
-    "file": "_app/immutable/nodes/11.P12c_QU8.js",
+    "file": "_app/immutable/nodes/11.rj1EjrBq.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_Pagination.K5Bnr8eO.js",
-      "_config.Jl7_C1bR.js"
+      "_Pagination.Q7M49Z-M.js",
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -85,32 +85,28 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/12.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/13.js": {
-    "file": "_app/immutable/nodes/13.vr_UyIuI.js",
+    "file": "_app/immutable/nodes/13._3V8zp11.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_Pagination.K5Bnr8eO.js",
-      "_config.Jl7_C1bR.js"
+      "_Pagination.Q7M49Z-M.js",
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/13.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "css": [
-      "_app/immutable/assets/2.RO_etTy8.css"
-    ],
     "dynamicImports": [
       "README.md"
     ],
-    "file": "_app/immutable/nodes/2.-yfWIlYG.js",
+    "file": "_app/immutable/nodes/2.Rcvc_8Uq.js",
     "imports": [
       "_preload-helper.0HuHagjb.js",
       "_index.oiCz_B55.js",
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_each.-oqiv04n.js",
-      "_config.Jl7_C1bR.js"
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -137,12 +133,12 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/4.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/5.js": {
-    "file": "_app/immutable/nodes/5.dbxhHZqa.js",
+    "file": "_app/immutable/nodes/5.D3taJJw0.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_Pagination.K5Bnr8eO.js",
-      "_config.Jl7_C1bR.js"
+      "_Pagination.Q7M49Z-M.js",
+      "_config.MpGNC8iJ.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -154,7 +150,7 @@
       "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md",
       "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md"
     ],
-    "file": "_app/immutable/nodes/6.VNLO12Vo.js",
+    "file": "_app/immutable/nodes/6.0f7IIZKT.js",
     "imports": [
       "_preload-helper.0HuHagjb.js",
       "_index.oiCz_B55.js",
@@ -178,11 +174,11 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/7.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/8.js": {
-    "file": "_app/immutable/nodes/8.UZsjH01c.js",
+    "file": "_app/immutable/nodes/8.2OkX-jMU.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
-      "_Pagination.K5Bnr8eO.js"
+      "_Pagination.Q7M49Z-M.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -207,17 +203,17 @@
     "isDynamicEntry": true,
     "src": "README.md"
   },
-  "_Pagination.K5Bnr8eO.js": {
-    "file": "_app/immutable/chunks/Pagination.K5Bnr8eO.js",
+  "_Pagination.Q7M49Z-M.js": {
+    "file": "_app/immutable/chunks/Pagination.Q7M49Z-M.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js",
       "_each.-oqiv04n.js",
-      "_config.Jl7_C1bR.js"
+      "_config.MpGNC8iJ.js"
     ]
   },
-  "_config.Jl7_C1bR.js": {
-    "file": "_app/immutable/chunks/config.Jl7_C1bR.js"
+  "_config.MpGNC8iJ.js": {
+    "file": "_app/immutable/chunks/config.MpGNC8iJ.js"
   },
   "_control.pJ1mnnAb.js": {
     "file": "_app/immutable/chunks/control.pJ1mnnAb.js"
@@ -243,24 +239,24 @@
   "_scheduler.u44qVECu.js": {
     "file": "_app/immutable/chunks/scheduler.u44qVECu.js"
   },
-  "_singletons.k00UwdgG.js": {
-    "file": "_app/immutable/chunks/singletons.k00UwdgG.js",
+  "_singletons.Gu_IjKwf.js": {
+    "file": "_app/immutable/chunks/singletons.Gu_IjKwf.js",
     "imports": [
       "_scheduler.u44qVECu.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.vAnspw1E.js",
+    "file": "_app/immutable/entry/start.KHRrPaC6.js",
     "imports": [
       "_scheduler.u44qVECu.js",
-      "_singletons.k00UwdgG.js",
+      "_singletons.Gu_IjKwf.js",
       "_control.pJ1mnnAb.js"
     ],
     "isEntry": true,
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js"
   },
   "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md": {
-    "file": "_app/immutable/chunks/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.LtFZ6JJA.js",
+    "file": "_app/immutable/chunks/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.1lA5MaZA.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js"
@@ -269,7 +265,7 @@
     "src": "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md"
   },
   "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md": {
-    "file": "_app/immutable/chunks/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.GoFvU9_3.js",
+    "file": "_app/immutable/chunks/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.j7CyqPH8.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js"
@@ -278,7 +274,7 @@
     "src": "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md"
   },
   "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md": {
-    "file": "_app/immutable/chunks/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.BFQyEANu.js",
+    "file": "_app/immutable/chunks/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.rCZyy13s.js",
     "imports": [
       "_scheduler.u44qVECu.js",
       "_index.fT9pQYMY.js"

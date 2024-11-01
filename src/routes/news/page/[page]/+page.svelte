@@ -1,4 +1,4 @@
-<!-- This file handles any /blog/page/x route for pagination -->
+<!-- This file handles any /news/page/x route for pagination -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'

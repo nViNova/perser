@@ -4,13 +4,16 @@ title: PH Unveils National Cybersecurity Plan 2023–2028
 author: Euri Barbon
 editor: Abram Marcelo
 date: 2024-10-16T00:00:00.000Z
-coverImage: media/uploads/94_big.jpg
+updated: 2024-10-16T00:00:00.000Z
+coverImage: /media/uploads/94_big.jpg
 attribution: DICT building at Quezon City
 excerpt: "On April 4, 2024, the Philippines launched the National
   Cybersecurity Plan (NCSP) 2023–2028 under the Executive Order #58 to enhance
   the nation’s cybersecurity landscape."
-tags:
-  - Cybersecurity;DICT;DOST
+categories:
+  - Cybersecurity
+  - DICT
+  - DOST
 references: >-
   Antivola, M. (2023, September 21). Philippines hit by most cyberattacks in
   Southeast Asia.

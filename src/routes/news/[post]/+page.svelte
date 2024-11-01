@@ -1,4 +1,4 @@
-<!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
+<!-- This file renders each individual news post for reading. Be sure to update the svelte:head below -->
 <script>
 	export let data;
 
