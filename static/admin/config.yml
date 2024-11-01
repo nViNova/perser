@@ -12,30 +12,30 @@ public_folder: /media/uploads
 site_url: https://theupparser.pages.dev/
 display_url: https://theupparser.pages.dev/
 logo_url: https://theupparser.pages.dev/favicon.svg
-publish_mode: editorial_workflow
 
 collections:
   - name: article # Used in routes, e.g., /admin/collections/article
     label: Article # Used in the UI
-    folder: _posts/articles # The path to the folder where the documents are stored
+    folder: src/lib/posts # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{type}}-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: Article Type, name: type, widget: select, options: [parsearch, feature, HoDCS], default: parsearch }
+      - { label: Article Type, name: type, widget: select, options: [parsearch, feature], default: parsearch }
       - { label: Title, name: title, widget: string }
       - { label: Author/s (add 'and' if multiple), name: author, widget: string }
       - { label: Editor/s (add 'and' if multiple), name: editor, widget: string }
       - { label: Publish Date, name: date, widget: datetime }
-      - { label: Featured Image, name: thumbnail, widget: image }
+      - { label: Updayte Date, name: updated, widget: datetime }
+      - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
-      - { label: Hook Sentence, name: description, widget: string }
+      - { label: Excerpt, name: excerpt, widget: string }
       - { label: Tags, name: tags, widget: list }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
 
   - name: announcement # Used in routes
     label: Announcement # Used in the UI
-    folder: _posts/announcements # The path to the folder where the documents are stored
+    folder: src/lib/announcements # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: 'announcement-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
