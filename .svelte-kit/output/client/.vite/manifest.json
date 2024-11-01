@@ -1,143 +1,289 @@
 {
   ".svelte-kit/generated/client-optimized/app.js": {
-    "file": "_app/immutable/entry/app.pyLwRCS5.js",
-    "name": "entry/app",
-    "src": ".svelte-kit/generated/client-optimized/app.js",
-    "isEntry": true,
-    "imports": [
-      "_runtime.DCzt9q0_.js",
-      "_render.CLkI1aB3.js",
-      "_disclose-version.C4KaHoDh.js",
-      "_if.BYXMljIm.js",
-      "_proxy.C-OBX6uX.js",
-      "_store.Cy9sLTqd.js"
-    ],
     "dynamicImports": [
       ".svelte-kit/generated/client-optimized/nodes/0.js",
       ".svelte-kit/generated/client-optimized/nodes/1.js",
       ".svelte-kit/generated/client-optimized/nodes/2.js",
-      ".svelte-kit/generated/client-optimized/nodes/3.js"
-    ]
+      ".svelte-kit/generated/client-optimized/nodes/3.js",
+      ".svelte-kit/generated/client-optimized/nodes/4.js",
+      ".svelte-kit/generated/client-optimized/nodes/5.js",
+      ".svelte-kit/generated/client-optimized/nodes/6.js",
+      ".svelte-kit/generated/client-optimized/nodes/7.js",
+      ".svelte-kit/generated/client-optimized/nodes/8.js",
+      ".svelte-kit/generated/client-optimized/nodes/9.js",
+      ".svelte-kit/generated/client-optimized/nodes/10.js",
+      ".svelte-kit/generated/client-optimized/nodes/11.js",
+      ".svelte-kit/generated/client-optimized/nodes/12.js",
+      ".svelte-kit/generated/client-optimized/nodes/13.js"
+    ],
+    "file": "_app/immutable/entry/app.BrbXfk5V.js",
+    "imports": [
+      "_preload-helper.0HuHagjb.js",
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/app.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/nodes/0.D9b33izB.js",
-    "name": "nodes/0",
-    "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "_app/immutable/nodes/0.MMF4pVnv.js",
     "imports": [
-      "_disclose-version.C4KaHoDh.js",
-      "_runtime.DCzt9q0_.js"
-    ]
+      "_index.oiCz_B55.js",
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_singletons.k00UwdgG.js",
+      "_each.-oqiv04n.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/0.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/1.js": {
-    "file": "_app/immutable/nodes/1.CIuqJgsF.js",
-    "name": "nodes/1",
-    "src": ".svelte-kit/generated/client-optimized/nodes/1.js",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "_app/immutable/nodes/1.60PeP3Sm.js",
     "imports": [
-      "_disclose-version.C4KaHoDh.js",
-      "_runtime.DCzt9q0_.js",
-      "_render.CLkI1aB3.js",
-      "_store.Cy9sLTqd.js",
-      "_entry.D4PZg8jt.js"
-    ]
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_singletons.k00UwdgG.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/1.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/10.js": {
+    "file": "_app/immutable/nodes/10.BFt46qEm.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_Pagination.K5Bnr8eO.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/10.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/11.js": {
+    "file": "_app/immutable/nodes/11.P12c_QU8.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_Pagination.K5Bnr8eO.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/11.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/12.js": {
+    "file": "_app/immutable/nodes/12._mChstkf.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/12.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/13.js": {
+    "file": "_app/immutable/nodes/13.vr_UyIuI.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_Pagination.K5Bnr8eO.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/13.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/nodes/2.BtksbAbr.js",
-    "name": "nodes/2",
-    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_disclose-version.C4KaHoDh.js",
-      "_runtime.DCzt9q0_.js",
-      "_each.BSp-JeMu.js",
-      "_proxy.C-OBX6uX.js"
-    ],
     "css": [
-      "_app/immutable/assets/2.DqSMxWOh.css"
-    ]
+      "_app/immutable/assets/2.RO_etTy8.css"
+    ],
+    "dynamicImports": [
+      "README.md"
+    ],
+    "file": "_app/immutable/nodes/2.-yfWIlYG.js",
+    "imports": [
+      "_preload-helper.0HuHagjb.js",
+      "_index.oiCz_B55.js",
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_each.-oqiv04n.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "file": "_app/immutable/nodes/3.BFsH3HXf.js",
-    "name": "nodes/3",
-    "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
-    "isEntry": true,
-    "isDynamicEntry": true,
+    "file": "_app/immutable/nodes/3.S5TPd-qa.js",
     "imports": [
-      "_disclose-version.C4KaHoDh.js",
-      "_runtime.DCzt9q0_.js",
-      "_render.CLkI1aB3.js",
-      "_if.BYXMljIm.js",
-      "_each.BSp-JeMu.js"
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
     ],
-    "css": [
-      "_app/immutable/assets/3.QiuEquFt.css"
-    ]
-  },
-  "_disclose-version.C4KaHoDh.js": {
-    "file": "_app/immutable/chunks/disclose-version.C4KaHoDh.js",
-    "name": "disclose-version",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "_each.BSp-JeMu.js": {
-    "file": "_app/immutable/chunks/each.BSp-JeMu.js",
-    "name": "each",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "_entry.D4PZg8jt.js": {
-    "file": "_app/immutable/chunks/entry.D4PZg8jt.js",
-    "name": "entry",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "_if.BYXMljIm.js": {
-    "file": "_app/immutable/chunks/if.BYXMljIm.js",
-    "name": "if",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "_proxy.C-OBX6uX.js": {
-    "file": "_app/immutable/chunks/proxy.C-OBX6uX.js",
-    "name": "proxy",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "_render.CLkI1aB3.js": {
-    "file": "_app/immutable/chunks/render.CLkI1aB3.js",
-    "name": "render",
-    "imports": [
-      "_runtime.DCzt9q0_.js",
-      "_disclose-version.C4KaHoDh.js"
-    ]
-  },
-  "_runtime.DCzt9q0_.js": {
-    "file": "_app/immutable/chunks/runtime.DCzt9q0_.js",
-    "name": "runtime"
-  },
-  "_store.Cy9sLTqd.js": {
-    "file": "_app/immutable/chunks/store.Cy9sLTqd.js",
-    "name": "store",
-    "imports": [
-      "_runtime.DCzt9q0_.js"
-    ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/client/entry.js": {
-    "file": "_app/immutable/entry/start.ClhNsRDn.js",
-    "name": "entry/start",
-    "src": "node_modules/@sveltejs/kit/src/runtime/client/entry.js",
+    "isDynamicEntry": true,
     "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/3.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/4.js": {
+    "file": "_app/immutable/nodes/4.xHIWL28w.js",
     "imports": [
-      "_entry.D4PZg8jt.js"
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/4.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/5.js": {
+    "file": "_app/immutable/nodes/5.dbxhHZqa.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_Pagination.K5Bnr8eO.js",
+      "_config.Jl7_C1bR.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/5.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/6.js": {
+    "dynamicImports": [
+      "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md",
+      "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md",
+      "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md"
+    ],
+    "file": "_app/immutable/nodes/6.VNLO12Vo.js",
+    "imports": [
+      "_preload-helper.0HuHagjb.js",
+      "_index.oiCz_B55.js",
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_each.-oqiv04n.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/6.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/7.js": {
+    "file": "_app/immutable/nodes/7.pUduYko3.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_each.-oqiv04n.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/7.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/8.js": {
+    "file": "_app/immutable/nodes/8.UZsjH01c.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_Pagination.K5Bnr8eO.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/8.js"
+  },
+  ".svelte-kit/generated/client-optimized/nodes/9.js": {
+    "file": "_app/immutable/nodes/9._mChstkf.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": ".svelte-kit/generated/client-optimized/nodes/9.js"
+  },
+  "README.md": {
+    "file": "_app/immutable/chunks/README.QrI1YJXf.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "README.md"
+  },
+  "_Pagination.K5Bnr8eO.js": {
+    "file": "_app/immutable/chunks/Pagination.K5Bnr8eO.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js",
+      "_each.-oqiv04n.js",
+      "_config.Jl7_C1bR.js"
     ]
+  },
+  "_config.Jl7_C1bR.js": {
+    "file": "_app/immutable/chunks/config.Jl7_C1bR.js"
+  },
+  "_control.pJ1mnnAb.js": {
+    "file": "_app/immutable/chunks/control.pJ1mnnAb.js"
+  },
+  "_each.-oqiv04n.js": {
+    "file": "_app/immutable/chunks/each.-oqiv04n.js"
+  },
+  "_index.fT9pQYMY.js": {
+    "file": "_app/immutable/chunks/index.fT9pQYMY.js",
+    "imports": [
+      "_scheduler.u44qVECu.js"
+    ]
+  },
+  "_index.oiCz_B55.js": {
+    "file": "_app/immutable/chunks/index.oiCz_B55.js",
+    "imports": [
+      "_control.pJ1mnnAb.js"
+    ]
+  },
+  "_preload-helper.0HuHagjb.js": {
+    "file": "_app/immutable/chunks/preload-helper.0HuHagjb.js"
+  },
+  "_scheduler.u44qVECu.js": {
+    "file": "_app/immutable/chunks/scheduler.u44qVECu.js"
+  },
+  "_singletons.k00UwdgG.js": {
+    "file": "_app/immutable/chunks/singletons.k00UwdgG.js",
+    "imports": [
+      "_scheduler.u44qVECu.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/entry/start.vAnspw1E.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_singletons.k00UwdgG.js",
+      "_control.pJ1mnnAb.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js"
+  },
+  "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md": {
+    "file": "_app/immutable/chunks/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.LtFZ6JJA.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md"
+  },
+  "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md": {
+    "file": "_app/immutable/chunks/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.GoFvU9_3.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md"
+  },
+  "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md": {
+    "file": "_app/immutable/chunks/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.BFQyEANu.js",
+    "imports": [
+      "_scheduler.u44qVECu.js",
+      "_index.fT9pQYMY.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md"
   }
 }

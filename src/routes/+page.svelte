@@ -2,52 +2,11 @@
 	import { siteTitle } from '$lib/config';
 
 	export let data;
-
-	let articles = $state([1,2,3,4,5,6,7]);
 </script>
 
 <svelte:head>
 	<title>{siteTitle}</title>
 </svelte:head>
-
-<style>
-    @import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
-    :root {
-      --bulma-primary-h: 54deg;
-      --bulma-primary-s: 98%;
-      --bulma-primary-l: 50%;
-      --bulma-scheme-h: 0;
-      --bulma-scheme-s: 0%;
-      --bulma-light-l: 97%;
-      --bulma-body-background-color: hsl(0,0%,97%);
-      --bulma-body-color: hsl(0deg,0%,28%);
-      --bulma-strong-color: hsl(0deg,0%,28%);
-      --bulma-subtitle-color: hsl(0deg,0%,28%);
-      --bulma-subtitle-strong-color: hsl(0deg,0%,28%);
-    }
-
-    .card {
-      --bulma-card-color: hsl(0deg,0%,28%);
-      --bulma-card-background-color: hsl(0,0,97%);
-      --bulma-card-header-color: hsl(0deg,0%,28%);
-    }
-
-    .navbar {
-      --bulma-navbar-background-color: hsl(54,98%,50%);
-    }
-
-    .tabs {
-      --bulma-tabs-link-active-color: hsl(221deg,14%,21%);
-      --bulma-tabs-boxed-link-hover-background-color: hsl(54,98%,50%);
-      --bulma-tabs-boxed-link-active-background-color: hsl(54,98%,50%);
-    }
-
-    .title {
-      --bulma-title-color: hsl(0deg,0%,28%);
-    }
-
-
-</style>    
 
 <div class="columns mx-6">
 
@@ -82,7 +41,7 @@
     <!-- other news -->
        
     <div class="column">
-      {#each articles as article}
+      <!-- {#each articles as article} -->
       <div class="card">
         <div class="card-image">
         <figure class="image is-4by3">
@@ -102,7 +61,7 @@
           
         </div>
       </div>
-      {/each}
+      <!-- {/each} -->
     </div>
 
     <div class="column">
@@ -110,22 +69,3 @@
     </div>
 
 </div>
-
-
-
-
-<!-- <div class="container mt-6 mb-6">
-    <h1 class="title">Hello {name}!</h1>
-    <button class="button is-primary" onclick={() => increment()}>
-        Added Obama {count} times
-    </button>
-    <button class="button is-danger" onclick="{() => increment(-1)}">
-        Removama
-    </button>
-</div>
-
-
-
-{#each nums as num}
-<img {src} width="20%" alt="obama."/>
-{/each} -->
