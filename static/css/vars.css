@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap'); */
+
+:root {
+	/* Colors */
+	--accent: #fce205;
+	--background: #f8f8f8;
+	--lightAccent: #A8DAE5;
+	--lighterAccent: #E6E8E4;
+	--dark: #484848;
+	--darker: #2a2929;
+	--slate: #2F3948;
+
+	--white: #fff;
+	--black: #152030;
+
+	--ink: var(--slate);
+	--paper: var(--background);
+
+	/**
+	 * These fonts are broken out into two separate variables from a previous iteration. I left
+	 * it in because it's nice to be able to split out the heading and body fonts.
+	 */
+	--accentFont: 'League Spartan', Georgia, Times, serif;
+	--primaryFont: 'League Spartan', sans-serif;
+	--codeFont: 'Fira Code', monospace;
+}
