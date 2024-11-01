@@ -8,9 +8,9 @@ backend:
 
 media_folder: static/media/uploads
 public_folder: /media/uploads
-site_url: https://theupparser.netlify.app/
-display_url: https://theupparser.netlify.app/
-logo_url: https://theupparser.netlify.app/favicon.svg
+site_url: https://theupparser.pages.dev/
+display_url: https://theupparser.pages.dev/
+logo_url: https://theupparser.pages.dev/favicon.svg
 publish_mode: editorial_workflow
 
 collections:
