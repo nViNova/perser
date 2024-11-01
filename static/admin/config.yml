@@ -3,7 +3,8 @@ backend:
   repo: nViNova/perser
   branch: restructure # Branch to update (optional; defaults to master)
   squash_merges: true
-  base_url: https://theupparser.pages.dev/admin
+  base_url: https://theupparser.pages.dev
+  auth_endpoint: /api/auth
 
 media_folder: static/media/uploads
 public_folder: /media/uploads
