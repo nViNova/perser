@@ -3,16 +3,11 @@ type: feature
 title: "Bootcamp 11.0: DCS welcomes Batch 2024"
 author: Eriene Galinato and Gabriel Inigo De Guzman
 editor: Abram Marcelo
-date: 2024-09-24T00:00:00.000Z
-updated: 2024-09-24T00:00:00.000Z
+date: 2024-09-24T00:00:00
+updated: 2024-09-24T00:00:00
 coverImage: /media/uploads/1_bs4bd25l7fwkgvt6vaanbg.webp
 attribution: Graphics by Stephen Gonda
-excerpt: "Last August 7–9, the incoming Department of Computer Science held
-  Bootcamp 11.0: the annual three-day introductory event for freshies, shiftees,
-  and transferees (FSTs). Bootcamp’s 11th year took place at the UP Alumni
-  Engineers Centennial Hall (UP AECH), and takes inspiration from Alice in
-  Wonderland. The event opened with a short speech from this year’s Overall
-  Head, Drei Ragasa."
+excerpt: "Last August 7–9, the incoming Department of Computer Science held Bootcamp 11.0: the annual three-day introductory event for freshies, shiftees, and transferees (FSTs). Bootcamp’s 11th year took place at the UP Alumni Engineers Centennial Hall (UP AECH), and takes inspiration from Alice in Wonderland. The event opened with a short speech from this year’s Overall Head, Drei Ragasa."
 categories:
   - DCS
   - UPD
@@ -28,7 +23,7 @@ Last August 7–9, the incoming Department of Computer Science held Bootcamp 11.
 
 For the first day, FSTs formed 9 teams, named after various characters in Alice’s Adventures in Wonderland and Through the Looking Glass. As their first team-building event, the FSTs created and then presented their respective team cheers.
 
-Alumnus Basti Ortiz then guided FSTs *down the rabbit hole* of UP Diliman’s BS Computer Science program. Ortiz highlighted how the curriculum focuses on both theory and research, requiring students to apply their knowledge and understand software complexity. He also addressed some common misconceptions and finally clarified the goals of DCS.
+Alumnus Basti Ortiz then guided FSTs _down the rabbit hole_ of UP Diliman’s BS Computer Science program. Ortiz highlighted how the curriculum focuses on both theory and research, requiring students to apply their knowledge and understand software complexity. He also addressed some common misconceptions and finally clarified the goals of DCS.
 
 The day continued with speakers Miko Surara and Daryll Ko serving some basic Python and Object-Oriented Programming to the FSTs. Relating their topics to the theme: just as one would need weapons to slay a Jabberwock — one would need some basic knowledge of programming to slay their early academic trials in BS Computer Science.
 
@@ -46,7 +41,7 @@ Bootcamp’s second day kicked off with a strong sense of camaraderie and humor 
 
 ![One group of FSTs present their app Skibi-Dee Go.](/media/uploads/0_jmtdbnctb4z-qsot.webp "One group of FSTs present their app Skibi-Dee Go.")
 
-Following the Wackathon, alumna speaker Shannen Tan brought the students *back to the real (virtual) world* in her talk about the many different rabbit holes and career paths that BS CS graduates have landed in.
+Following the Wackathon, alumna speaker Shannen Tan brought the students _back to the real (virtual) world_ in her talk about the many different rabbit holes and career paths that BS CS graduates have landed in.
 
 Organizers then toured the FSTs around UP AECH, with each stop featuring a description of activities that take place in areas visited. The tour concluded in the Accenture Ideas Exchange Room, which was followed by team-building activities such as teacup presentation. Each group had a day to decorate their teacups, with the design relating to the theme of the Bootcamp 11.0 (Wonderland). The finished cups served as flags to represent their respective teams.
 
@@ -64,4 +59,4 @@ In culmination to the event, Batch 2021 representative Paolo De Los Santos led t
 
 ![Paolo De Los Santos tells the audience to practice self-care.](/media/uploads/0_6yhbsofotbh6j-9m.webp "Paolo De Los Santos tells the audience to practice self-care.")
 
-Bootcamp 11.0 wrapped up with an awarding ceremony, where each FST group received certificates for their warm three-day participation. Although the event has ended, it marks the beginning of an exciting journey of Batch 2024 at the Department of Computer Science — a true *wonderland* of opportunities.
+Bootcamp 11.0 wrapped up with an awarding ceremony, where each FST group received certificates for their warm three-day participation. Although the event has ended, it marks the beginning of an exciting journey of Batch 2024 at the Department of Computer Science — a true _wonderland_ of opportunities.
