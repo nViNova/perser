@@ -9,9 +9,9 @@ export async function onRequest(context) {
     } = context;
 
     const client_id = env.GITHUB_CLIENT_ID;
+    console.log('Client id: ', client_id)
 
     try {
-        console.log(client_id);
         const url = new URL(request.url);
         const redirectUrl = new URL('https://github.com/login/oauth/authorize');
         redirectUrl.searchParams.set('client_id', client_id);
