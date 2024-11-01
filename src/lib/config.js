@@ -29,4 +29,8 @@ export const navItems = [
 		title: 'Contact',
 		route: '/contact' 
 	},
+	{
+		title: 'Contribute',
+		route: 'https://theupparser.pages.dev/admin/' 
+	}
 ]
