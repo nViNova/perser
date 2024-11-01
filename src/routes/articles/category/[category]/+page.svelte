@@ -1,4 +1,4 @@
-<!-- Renders any page at /news/category/* -->
+<!-- Renders any page at /articles/category/* -->
 <script>
 	import PostsList from '$lib/components/PostsList.svelte'
 	import Pagination from '$lib/components/Pagination.svelte'
@@ -18,13 +18,13 @@
 </svelte:head>
 
 
-<h1>News category: {category}</h1>
+<h1>Articles category: {category}</h1>
 
 {#if posts.length}
 	<PostsList posts={posts} />
-	<Pagination currentPage={page} totalPosts={total} path="/news/category/{category}/page" />
+	<Pagination currentPage={page} totalPosts={total} path="/articles/category/{category}/page" />
 {:else}
 	<p><strong>Oops!</strong> Sorry, couldn't find any posts in the category "{category}".</p>
 
-	<p><a href="/news">Back to news</a></p>
+	<p><a href="/articles">Back to Articles</a></p>
 {/if}

@@ -13,7 +13,7 @@
 
 
 <svelte:head>
-	<title>News category {category} - page {page}</title>
+	<title>articles category {category} - page {page}</title>
 	<meta data-key="description" name={siteDescription}>
 </svelte:head>
 
@@ -25,15 +25,15 @@
 		<br />
 		<small>Posts {lowerBound}–{upperBound} of {totalPosts}</small>
 	</h1>
-	<Pagination currentPage={page} {totalPosts} path="/news/category/{category}/page" />
+	<Pagination currentPage={page} {totalPosts} path="/articles/category/{category}/page" />
 
 	<PostsList {posts} />
 
-	<Pagination currentPage={page} {totalPosts} path="/news/category/{category}/page" />
+	<Pagination currentPage={page} {totalPosts} path="/articles/category/{category}/page" />
 {:else}
 	<h1>Oops!</h1>
 
 	<p>Sorry, no posts to show here.</p>
 
-	<a href="/news">Back to News</a>
+	<a href="/articles">Back to Articles</a>
 {/if}

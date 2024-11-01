@@ -5,17 +5,17 @@
 
 
 <svelte:head>
-	<title>News | Categories</title>
+	<title>Articles | Categories</title>
 </svelte:head>
 
 
 <div class="compressed-content">
-	<h1 class="h2">All news categories</h1>
+	<h1 class="h2">All article categories</h1>
 	
 	<ul>
 		{#each uniqueCategories as category}
 		<li>
-			<a href="/news/category/{category.title}">
+			<a href="/articles/category/{category.title}">
 				{ category.title }
 			</a>
 			({category.count})

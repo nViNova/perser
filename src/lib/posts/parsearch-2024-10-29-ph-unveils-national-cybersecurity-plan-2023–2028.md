@@ -20,10 +20,10 @@ references: >-
   https://www.bworldonline.com/technology/2023/09/21/546783/philippines-hit-by-most-cyberattacks-in-southeast-asia/
 
 
-  Cabato, L. (2024, April 6). Marcos adopts DICT’s National Cybersecurity Plan 2023–2028. https://newsinfo.inquirer.net/1926956/marcos-adopts-dicts-national-cybersecurity-plan-2023-2028
+  Cabato, L. (2024, April 6). Marcos adopts DICT’s National Cybersecurity Plan 2023–2028. https://articlesinfo.inquirer.net/1926956/marcos-adopts-dicts-national-cybersecurity-plan-2023-2028
 
 
-  Casucian, J. A. (2024, August 28). PH intel fusion center eyed to boost cybersecurity — DICT. https://www.gmanetwork.com/news/topstories/nation/918517/ph-intel-fusion-center-eyed-to-boost-cybersecurity-dict/story/
+  Casucian, J. A. (2024, August 28). PH intel fusion center eyed to boost cybersecurity — DICT. https://www.gmanetwork.com/articles/topstories/nation/918517/ph-intel-fusion-center-eyed-to-boost-cybersecurity-dict/story/
 
 
   Frontier Enterprise. (2024, January 8). 2 in 3 PH firms lose at least US$1M each to cyberattacks. https://www.frontier-enterprise.com/2-in-3-philippine-firms-lose-at-least-1-million-each-to-cyberattacks/
@@ -32,7 +32,7 @@ references: >-
   Gita-Carlos, R. A. (2024, April 6). Marcos orders adoption of Nat’l Cybersecurity Plan 2023–2028. https://www.pna.gov.ph/articles/1222170
 
 
-  SciTech and Digital News. (2024, May 24). Exploring the Future of Philippine Cybersecurity: Kaspersky Shares Insights on NCSP 2023–2028. https://scitechanddigital.news/2024/05/24/exploring-the-future-of-philippine-cybersecurity-kaspersky-shares-insights-on-ncsp-2023-2028/
+  SciTech and Digital articles. (2024, May 24). Exploring the Future of Philippine Cybersecurity: Kaspersky Shares Insights on NCSP 2023–2028. https://scitechanddigital.articles/2024/05/24/exploring-the-future-of-philippine-cybersecurity-kaspersky-shares-insights-on-ncsp-2023-2028/
 
 
   Senate of the Philippines. (2024, October 10). Gatchalian urges DICT to elevate the country’s cyber security as a national security concern. https://legacy.senate.gov.ph/press_release/2024/1010_gatchalian1.asp

@@ -22,16 +22,16 @@ export const server_loads = [];
 export const dictionary = {
 		"/": [2],
 		"/about": [3],
-		"/contact": [4],
-		"/news": [~5],
-		"/news/category": [~7],
-		"/news/category/page/[page]": [~11],
-		"/news/category/[category]": [~8],
-		"/news/category/[category]/page": [~9],
-		"/news/category/[category]/page/[page]": [~10],
-		"/news/page": [~12],
-		"/news/page/[page]": [~13],
-		"/news/[post]": [6]
+		"/articles": [~4],
+		"/articles/category": [~6],
+		"/articles/category/page/[page]": [~10],
+		"/articles/category/[category]": [~7],
+		"/articles/category/[category]/page": [~8],
+		"/articles/category/[category]/page/[page]": [~9],
+		"/articles/page": [~11],
+		"/articles/page/[page]": [~12],
+		"/articles/[post]": [5],
+		"/contact": [13]
 	};
 
 export const hooks = {

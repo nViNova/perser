@@ -1,4 +1,4 @@
-<!-- This file renders each individual news post for reading. Be sure to update the svelte:head below -->
+<!-- This file renders each individual articles post for reading. Be sure to update the svelte:head below -->
 <script>
 	export let data;
 
@@ -51,7 +51,7 @@
 			<ul class="post-footer__categories">
 				{#each categories as category}
 					<li>
-						<a href="/news/category/{category}/">
+						<a href="/articles/category/{category}/">
 							{category}
 						</a>
 					</li>

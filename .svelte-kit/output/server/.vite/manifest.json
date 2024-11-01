@@ -188,6 +188,164 @@
     "isEntry": true,
     "src": "src/routes/api/rss.xml/+server.js"
   },
+  "src/routes/articles/+page.server.js": {
+    "file": "entries/pages/articles/_page.server.js",
+    "isEntry": true,
+    "src": "src/routes/articles/+page.server.js"
+  },
+  "src/routes/articles/+page.svelte": {
+    "file": "entries/pages/articles/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Pagination.js",
+      "_config.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/+page.svelte"
+  },
+  "src/routes/articles/[post]/+page.js": {
+    "dynamicImports": [
+      "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md",
+      "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md",
+      "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md"
+    ],
+    "file": "entries/pages/articles/_post_/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/[post]/+page.js"
+  },
+  "src/routes/articles/[post]/+page.svelte": {
+    "file": "entries/pages/articles/_post_/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/[post]/+page.svelte"
+  },
+  "src/routes/articles/category/+page.server.js": {
+    "file": "entries/pages/articles/category/_page.server.js",
+    "isEntry": true,
+    "src": "src/routes/articles/category/+page.server.js"
+  },
+  "src/routes/articles/category/+page.svelte": {
+    "file": "entries/pages/articles/category/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/+page.svelte"
+  },
+  "src/routes/articles/category/[category]/+page.server.js": {
+    "file": "entries/pages/articles/category/_category_/_page.server.js",
+    "imports": [
+      "_fetchPosts.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/+page.server.js"
+  },
+  "src/routes/articles/category/[category]/+page.svelte": {
+    "file": "entries/pages/articles/category/_category_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Pagination.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/+page.svelte"
+  },
+  "src/routes/articles/category/[category]/page/+page.server.js": {
+    "file": "entries/pages/articles/category/_category_/page/_page.server.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/page/+page.server.js"
+  },
+  "src/routes/articles/category/[category]/page/+page.svelte": {
+    "file": "entries/pages/articles/category/_category_/page/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/page/+page.svelte"
+  },
+  "src/routes/articles/category/[category]/page/[page]/+page.server.js": {
+    "file": "entries/pages/articles/category/_category_/page/_page_/_page.server.js",
+    "imports": [
+      "_index.js",
+      "_config.js",
+      "_fetchPosts.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/page/[page]/+page.server.js"
+  },
+  "src/routes/articles/category/[category]/page/[page]/+page.svelte": {
+    "file": "entries/pages/articles/category/_category_/page/_page_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Pagination.js",
+      "_config.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/[category]/page/[page]/+page.svelte"
+  },
+  "src/routes/articles/category/page/[page]/+page.server.js": {
+    "file": "entries/pages/articles/category/page/_page_/_page.server.js",
+    "imports": [
+      "_index.js",
+      "_config.js",
+      "_fetchPosts.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/page/[page]/+page.server.js"
+  },
+  "src/routes/articles/category/page/[page]/+page.svelte": {
+    "file": "entries/pages/articles/category/page/_page_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Pagination.js",
+      "_config.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/category/page/[page]/+page.svelte"
+  },
+  "src/routes/articles/page/+page.server.js": {
+    "file": "entries/pages/articles/page/_page.server.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/page/+page.server.js"
+  },
+  "src/routes/articles/page/+page.svelte": {
+    "file": "entries/pages/articles/page/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/page/+page.svelte"
+  },
+  "src/routes/articles/page/[page]/+page.server.js": {
+    "file": "entries/pages/articles/page/_page_/_page.server.js",
+    "imports": [
+      "_config.js",
+      "_fetchPosts.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/page/[page]/+page.server.js"
+  },
+  "src/routes/articles/page/[page]/+page.svelte": {
+    "file": "entries/pages/articles/page/_page_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_Pagination.js",
+      "_config.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/articles/page/[page]/+page.svelte"
+  },
   "src/routes/contact/+page.svelte": {
     "file": "entries/pages/contact/_page.svelte.js",
     "imports": [
@@ -195,163 +353,5 @@
     ],
     "isEntry": true,
     "src": "src/routes/contact/+page.svelte"
-  },
-  "src/routes/news/+page.server.js": {
-    "file": "entries/pages/news/_page.server.js",
-    "isEntry": true,
-    "src": "src/routes/news/+page.server.js"
-  },
-  "src/routes/news/+page.svelte": {
-    "file": "entries/pages/news/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Pagination.js",
-      "_config.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/+page.svelte"
-  },
-  "src/routes/news/[post]/+page.js": {
-    "dynamicImports": [
-      "src/lib/posts/feature-2024-10-29-bootcamp-11-0-dcs-welcomes-batch-2024.md",
-      "src/lib/posts/parsearch-2024-10-29-dost-broaches-‘isip-program-’-‘project-marayum’-for-natural-language-research.md",
-      "src/lib/posts/parsearch-2024-10-29-ph-unveils-national-cybersecurity-plan-2023–2028.md"
-    ],
-    "file": "entries/pages/news/_post_/_page.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/[post]/+page.js"
-  },
-  "src/routes/news/[post]/+page.svelte": {
-    "file": "entries/pages/news/_post_/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/[post]/+page.svelte"
-  },
-  "src/routes/news/category/+page.server.js": {
-    "file": "entries/pages/news/category/_page.server.js",
-    "isEntry": true,
-    "src": "src/routes/news/category/+page.server.js"
-  },
-  "src/routes/news/category/+page.svelte": {
-    "file": "entries/pages/news/category/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/+page.svelte"
-  },
-  "src/routes/news/category/[category]/+page.server.js": {
-    "file": "entries/pages/news/category/_category_/_page.server.js",
-    "imports": [
-      "_fetchPosts.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/+page.server.js"
-  },
-  "src/routes/news/category/[category]/+page.svelte": {
-    "file": "entries/pages/news/category/_category_/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Pagination.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/+page.svelte"
-  },
-  "src/routes/news/category/[category]/page/+page.server.js": {
-    "file": "entries/pages/news/category/_category_/page/_page.server.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/page/+page.server.js"
-  },
-  "src/routes/news/category/[category]/page/+page.svelte": {
-    "file": "entries/pages/news/category/_category_/page/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/page/+page.svelte"
-  },
-  "src/routes/news/category/[category]/page/[page]/+page.server.js": {
-    "file": "entries/pages/news/category/_category_/page/_page_/_page.server.js",
-    "imports": [
-      "_index.js",
-      "_config.js",
-      "_fetchPosts.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/page/[page]/+page.server.js"
-  },
-  "src/routes/news/category/[category]/page/[page]/+page.svelte": {
-    "file": "entries/pages/news/category/_category_/page/_page_/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Pagination.js",
-      "_config.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/[category]/page/[page]/+page.svelte"
-  },
-  "src/routes/news/category/page/[page]/+page.server.js": {
-    "file": "entries/pages/news/category/page/_page_/_page.server.js",
-    "imports": [
-      "_index.js",
-      "_config.js",
-      "_fetchPosts.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/page/[page]/+page.server.js"
-  },
-  "src/routes/news/category/page/[page]/+page.svelte": {
-    "file": "entries/pages/news/category/page/_page_/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Pagination.js",
-      "_config.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/category/page/[page]/+page.svelte"
-  },
-  "src/routes/news/page/+page.server.js": {
-    "file": "entries/pages/news/page/_page.server.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/page/+page.server.js"
-  },
-  "src/routes/news/page/+page.svelte": {
-    "file": "entries/pages/news/page/_page.svelte.js",
-    "imports": [
-      "_ssr.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/page/+page.svelte"
-  },
-  "src/routes/news/page/[page]/+page.server.js": {
-    "file": "entries/pages/news/page/_page_/_page.server.js",
-    "imports": [
-      "_config.js",
-      "_fetchPosts.js",
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/page/[page]/+page.server.js"
-  },
-  "src/routes/news/page/[page]/+page.svelte": {
-    "file": "entries/pages/news/page/_page_/_page.svelte.js",
-    "imports": [
-      "_ssr.js",
-      "_Pagination.js",
-      "_config.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/news/page/[page]/+page.svelte"
   }
 }

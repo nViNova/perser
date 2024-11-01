@@ -27,12 +27,12 @@ const config = {
       entries: [
         '*',
         '/api/posts/page/*',
-        '/news/category/*/page/',
-        '/news/category/*/page/*',
-        '/news/category/page/',
-        '/news/category/page/*',
-        '/news/page/',
-        '/news/page/*',
+        '/articles/category/*/page/',
+        '/articles/category/*/page/*',
+        '/articles/category/page/',
+        '/articles/category/page/*',
+        '/articles/page/',
+        '/articles/page/*',
       ]
     }
 	}

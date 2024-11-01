@@ -8,11 +8,11 @@
 
 
 <svelte:head>
-	<title>News</title>
+	<title>Articles</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1>News</h1>
+<h1>Articles</h1>
 
 <PostsList posts={data.posts} />
 

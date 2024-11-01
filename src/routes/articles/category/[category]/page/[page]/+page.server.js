@@ -8,7 +8,7 @@ export const load = async ({ url, params, fetch }) => {
 
 	// Prevents duplication of page 1 as the index page
 	if (page <= 1) {
-		redirect(301, `/news/category/${category}`);
+		redirect(301, `/articles/category/${category}`);
 	}
 	
 	let offset = (page * postsPerPage) - postsPerPage

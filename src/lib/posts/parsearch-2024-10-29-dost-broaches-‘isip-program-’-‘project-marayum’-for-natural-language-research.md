@@ -19,7 +19,7 @@ categories:
   - Project-Marayum
 references: DOST-PCIEERD. (2024). DOST leads charge for natural language
   research roadmap.
-  https://pcieerd.dost.gov.ph/news/latest-news/583-dost-leads-charge-for-natural-language-research-roadmap
+  https://pcieerd.dost.gov.ph/articles/latest-articles/583-dost-leads-charge-for-natural-language-research-roadmap
 ---
 In August 2024, the DOST Philippine Council for Industry, Energy, and Emerging Technology Research and Development (PCIEERD) held a multi-disciplinary meeting tackling various projects to lay out a roadmap for natural language processing (NLP) and large language model development focused on Philippine languages.
 
