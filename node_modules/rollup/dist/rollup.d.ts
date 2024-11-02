@@ -1,3 +1,21 @@
+import type * as estree from 'estree';
+
+declare module 'estree' {
+	export interface Decorator extends estree.BaseNode {
+		type: 'Decorator';
+		expression: estree.Expression;
+	}
+	interface PropertyDefinition {
+		decorators: estree.Decorator[];
+	}
+	interface MethodDefinition {
+		decorators: estree.Decorator[];
+	}
+	interface BaseClass {
+		decorators: estree.Decorator[];
+	}
+}
+
 export const VERSION: string;
 
 // utils
@@ -98,13 +116,13 @@ interface ModuleOptions {
 }
 
 export interface SourceDescription extends Partial<PartialNull<ModuleOptions>> {
-	ast?: AstNode;
+	ast?: ProgramNode;
 	code: string;
 	map?: SourceMapInput;
 }
 
 export interface TransformModuleJSON {
-	ast?: AstNode;
+	ast?: ProgramNode;
 	code: string;
 	// note if plugins use new this.cache to opt-out auto transform cache
 	customTransformCache: boolean;
@@ -115,7 +133,7 @@ export interface TransformModuleJSON {
 }
 
 export interface ModuleJSON extends TransformModuleJSON, ModuleOptions {
-	ast: AstNode;
+	ast: ProgramNode;
 	dependencies: string[];
 	id: string;
 	resolvedIds: ResolvedIdMap;
@@ -143,6 +161,7 @@ export interface EmittedAsset {
 	fileName?: string;
 	name?: string;
 	needsCodeReference?: boolean;
+	originalFileName?: string | null;
 	source?: string | Uint8Array;
 	type: 'asset';
 }
@@ -171,7 +190,7 @@ export type EmittedFile = EmittedAsset | EmittedChunk | EmittedPrebuiltChunk;
 export type EmitFile = (emittedFile: EmittedFile) => string;
 
 interface ModuleInfo extends ModuleOptions {
-	ast: AstNode | null;
+	ast: ProgramNode | null;
 	code: string | null;
 	dynamicImporters: readonly string[];
 	dynamicallyImportedIdResolutions: readonly ResolvedId[];
@@ -192,9 +211,7 @@ interface ModuleInfo extends ModuleOptions {
 
 export type GetModuleInfo = (moduleId: string) => ModuleInfo | null;
 
-export interface CustomPluginOptions {
-	[plugin: string]: any;
-}
+export type CustomPluginOptions = Record<string, any>;
 
 type LoggingFunctionWithPosition = (
 	log: RollupLog | string | (() => RollupLog | string),
@@ -203,18 +220,19 @@ type LoggingFunctionWithPosition = (
 
 export type ParseAst = (
 	input: string,
-	options?: { allowReturnOutsideFunction?: boolean }
-) => AstNode;
+	options?: { allowReturnOutsideFunction?: boolean; jsx?: boolean }
+) => ProgramNode;
 
 // declare AbortSignal here for environments without DOM lib or @types/node
 declare global {
+	// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 	interface AbortSignal {}
 }
 
 export type ParseAstAsync = (
 	input: string,
-	options?: { allowReturnOutsideFunction?: boolean; signal?: AbortSignal }
-) => Promise<AstNode>;
+	options?: { allowReturnOutsideFunction?: boolean; jsx?: boolean; signal?: AbortSignal }
+) => Promise<ProgramNode>;
 
 export interface PluginContext extends MinimalPluginContext {
 	addWatchFile: (id: string) => void;
@@ -256,9 +274,7 @@ export interface ResolvedId extends ModuleOptions {
 	resolvedBy: string;
 }
 
-export interface ResolvedIdMap {
-	[key: string]: ResolvedId;
-}
+export type ResolvedIdMap = Record<string, ResolvedId>;
 
 interface PartialResolvedId extends Partial<PartialNull<ModuleOptions>> {
 	external?: boolean | 'absolute' | 'relative';
@@ -280,7 +296,7 @@ export type ResolveIdHook = (
 export type ShouldTransformCachedModuleHook = (
 	this: PluginContext,
 	options: {
-		ast: AstNode;
+		ast: ProgramNode;
 		code: string;
 		id: string;
 		meta: CustomPluginOptions;
@@ -376,12 +392,9 @@ export type WatchChangeHook = (
  * const myPlugin: PluginImpl<Options> = (options = {}) => { ... }
  * ```
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
 export type PluginImpl<O extends object = object, A = any> = (options?: O) => Plugin<A>;
 
-export interface OutputBundle {
-	[fileName: string]: OutputAsset | OutputChunk;
-}
+export type OutputBundle = Record<string, OutputAsset | OutputChunk>;
 
 export interface FunctionPluginHooks {
 	augmentChunkHash: (this: PluginContext, chunk: RenderedChunk) => string | void;
@@ -486,13 +499,13 @@ type MakeAsync<Function_> = Function_ extends (
 	? (this: This, ...parameters: Arguments) => Return | Promise<Return>
 	: never;
 
-// eslint-disable-next-line @typescript-eslint/ban-types
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 type ObjectHook<T, O = {}> = T | ({ handler: T; order?: 'pre' | 'post' | null } & O);
 
 export type PluginHooks = {
 	[K in keyof FunctionPluginHooks]: ObjectHook<
 		K extends AsyncPluginHooks ? MakeAsync<FunctionPluginHooks[K]> : FunctionPluginHooks[K],
-		// eslint-disable-next-line @typescript-eslint/ban-types
+		// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 		K extends ParallelPluginHooks ? { sequential?: boolean } : {}
 	>;
 };
@@ -509,6 +522,38 @@ export interface Plugin<A = any> extends OutputPlugin, Partial<PluginHooks> {
 	// for inter-plugin communication
 	api?: A;
 }
+
+export type JsxPreset = 'react' | 'react-jsx' | 'preserve' | 'preserve-react';
+
+export type NormalizedJsxOptions =
+	| NormalizedJsxPreserveOptions
+	| NormalizedJsxClassicOptions
+	| NormalizedJsxAutomaticOptions;
+
+interface NormalizedJsxPreserveOptions {
+	factory: string | null;
+	fragment: string | null;
+	importSource: string | null;
+	mode: 'preserve';
+}
+
+interface NormalizedJsxClassicOptions {
+	factory: string;
+	fragment: string;
+	importSource: string | null;
+	mode: 'classic';
+}
+
+interface NormalizedJsxAutomaticOptions {
+	factory: string;
+	importSource: string | null;
+	jsxImportSource: string;
+	mode: 'automatic';
+}
+
+export type JsxOptions = Partial<NormalizedJsxOptions> & {
+	preset?: JsxPreset;
+};
 
 export type TreeshakingPreset = 'smallest' | 'safest' | 'recommended';
 
@@ -532,6 +577,7 @@ interface ManualChunkMeta {
 	getModuleIds: () => IterableIterator<string>;
 	getModuleInfo: GetModuleInfo;
 }
+
 export type GetManualChunk = (id: string, meta: ManualChunkMeta) => string | NullValue;
 
 export type ExternalOption =
@@ -540,11 +586,11 @@ export type ExternalOption =
 	| RegExp
 	| ((source: string, importer: string | undefined, isResolved: boolean) => boolean | NullValue);
 
-export type GlobalsOption = { [name: string]: string } | ((name: string) => string);
+export type GlobalsOption = Record<string, string> | ((name: string) => string);
 
-export type InputOption = string | string[] | { [entryAlias: string]: string };
+export type InputOption = string | string[] | Record<string, string>;
 
-export type ManualChunksOption = { [chunkAlias: string]: string[] } | GetManualChunk;
+export type ManualChunksOption = Record<string, string[]> | GetManualChunk;
 
 export type LogHandlerWithDefault = (
 	level: LogLevel,
@@ -579,10 +625,11 @@ export interface InputOptions {
 	experimentalLogSideEffects?: boolean;
 	external?: ExternalOption;
 	input?: InputOption;
+	jsx?: false | JsxPreset | JsxOptions;
 	logLevel?: LogLevelOption;
 	makeAbsoluteExternalsRelative?: boolean | 'ifRelativeSource';
 	maxParallelFileOps?: number;
-	moduleContext?: ((id: string) => string | NullValue) | { [id: string]: string };
+	moduleContext?: ((id: string) => string | NullValue) | Record<string, string>;
 	onLog?: LogHandlerWithDefault;
 	onwarn?: WarningHandlerWithDefault;
 	perf?: boolean;
@@ -605,7 +652,8 @@ export interface NormalizedInputOptions {
 	experimentalCacheExpiry: number;
 	experimentalLogSideEffects: boolean;
 	external: IsExternal;
-	input: string[] | { [entryAlias: string]: string };
+	input: string[] | Record<string, string>;
+	jsx: false | NormalizedJsxOptions;
 	logLevel: LogLevelOption;
 	makeAbsoluteExternalsRelative: boolean | 'ifRelativeSource';
 	maxParallelFileOps: number;
@@ -621,6 +669,7 @@ export interface NormalizedInputOptions {
 }
 
 export type InternalModuleFormat = 'amd' | 'cjs' | 'es' | 'iife' | 'system' | 'umd';
+export type ImportAttributesKey = 'with' | 'assert';
 
 export type ModuleFormat = InternalModuleFormat | 'commonjs' | 'esm' | 'module' | 'systemjs';
 
@@ -681,6 +730,8 @@ type AddonFunction = (chunk: RenderedChunk) => string | Promise<string>;
 
 type OutputPluginOption = MaybePromise<OutputPlugin | NullValue | false | OutputPluginOption[]>;
 
+type HashCharacters = 'base64' | 'base36' | 'hex';
+
 export interface OutputOptions {
 	amd?: AmdOptions;
 	assetFileNames?: string | ((chunkInfo: PreRenderedAsset) => string);
@@ -706,7 +757,9 @@ export interface OutputOptions {
 	freeze?: boolean;
 	generatedCode?: GeneratedCodePreset | GeneratedCodeOptions;
 	globals?: GlobalsOption;
+	hashCharacters?: HashCharacters;
 	hoistTransitiveImports?: boolean;
+	importAttributesKey?: ImportAttributesKey;
 	indent?: string | boolean;
 	inlineDynamicImports?: boolean;
 	interop?: InteropType | GetInterop;
@@ -720,6 +773,7 @@ export interface OutputOptions {
 	plugins?: OutputPluginOption;
 	preserveModules?: boolean;
 	preserveModulesRoot?: string;
+	reexportProtoFromExternal?: boolean;
 	sanitizeFileName?: boolean | ((fileName: string) => string);
 	sourcemap?: boolean | 'inline' | 'hidden';
 	sourcemapBaseUrl?: string;
@@ -731,6 +785,7 @@ export interface OutputOptions {
 	strict?: boolean;
 	systemNullSetters?: boolean;
 	validate?: boolean;
+	virtualDirname?: string;
 }
 
 export interface NormalizedOutputOptions {
@@ -756,7 +811,9 @@ export interface NormalizedOutputOptions {
 	freeze: boolean;
 	generatedCode: NormalizedGeneratedCodeOptions;
 	globals: GlobalsOption;
+	hashCharacters: HashCharacters;
 	hoistTransitiveImports: boolean;
+	importAttributesKey: ImportAttributesKey;
 	indent: true | string;
 	inlineDynamicImports: boolean;
 	interop: GetInterop;
@@ -770,6 +827,7 @@ export interface NormalizedOutputOptions {
 	plugins: OutputPlugin[];
 	preserveModules: boolean;
 	preserveModulesRoot: string | undefined;
+	reexportProtoFromExternal: boolean;
 	sanitizeFileName: (fileName: string) => string;
 	sourcemap: boolean | 'inline' | 'hidden';
 	sourcemapBaseUrl: string | undefined;
@@ -781,6 +839,7 @@ export interface NormalizedOutputOptions {
 	strict: boolean;
 	systemNullSetters: boolean;
 	validate: boolean;
+	virtualDirname: string;
 }
 
 export type WarningHandlerWithDefault = (
@@ -788,12 +847,15 @@ export type WarningHandlerWithDefault = (
 	defaultHandler: LoggingFunction
 ) => void;
 
-export interface SerializedTimings {
-	[label: string]: [number, number, number];
-}
+export type SerializedTimings = Record<string, [number, number, number]>;
 
 export interface PreRenderedAsset {
+	/** @deprecated Use "names" instead. */
 	name: string | undefined;
+	names: string[];
+	/** @deprecated Use "originalFileNames" instead. */
+	originalFileName: string | null;
+	originalFileNames: string[];
 	source: string | Uint8Array;
 	type: 'asset';
 }
@@ -826,13 +888,9 @@ export interface RenderedChunk extends PreRenderedChunk {
 	dynamicImports: string[];
 	fileName: string;
 	implicitlyLoadedBefore: string[];
-	importedBindings: {
-		[imported: string]: string[];
-	};
+	importedBindings: Record<string, string[]>;
 	imports: string[];
-	modules: {
-		[id: string]: RenderedModule;
-	};
+	modules: Record<string, RenderedModule>;
 	referencedFiles: string[];
 }
 
@@ -843,9 +901,7 @@ export interface OutputChunk extends RenderedChunk {
 	preliminaryFileName: string;
 }
 
-export interface SerializablePluginCache {
-	[key: string]: [number, any];
-}
+export type SerializablePluginCache = Record<string, [number, any]>;
 
 export interface RollupCache {
 	modules: ModuleJSON[];
@@ -917,11 +973,11 @@ export interface RollupWatchOptions extends InputOptions {
 }
 
 export type AwaitedEventListener<
-	T extends { [event: string]: (...parameters: any) => any },
+	T extends Record<string, (...parameters: any) => any>,
 	K extends keyof T
 > = (...parameters: Parameters<T[K]>) => void | Promise<void>;
 
-export interface AwaitingEventEmitter<T extends { [event: string]: (...parameters: any) => any }> {
+export interface AwaitingEventEmitter<T extends Record<string, (...parameters: any) => any>> {
 	close(): Promise<void>;
 	emit<K extends keyof T>(event: K, ...parameters: Parameters<T[K]>): Promise<unknown>;
 	/**
@@ -971,11 +1027,22 @@ export type RollupWatcher = AwaitingEventEmitter<{
 
 export function watch(config: RollupWatchOptions | RollupWatchOptions[]): RollupWatcher;
 
-interface AstNode {
+interface AstNodeLocation {
 	end: number;
 	start: number;
-	type: string;
 }
+
+type OmittedEstreeKeys =
+	| 'loc'
+	| 'range'
+	| 'leadingComments'
+	| 'trailingComments'
+	| 'innerComments'
+	| 'comments';
+type RollupAstNode<T> = Omit<T, OmittedEstreeKeys> & AstNodeLocation;
+
+type ProgramNode = RollupAstNode<estree.Program>;
+export type AstNode = RollupAstNode<estree.Node>;
 
 export function defineConfig(options: RollupOptions): RollupOptions;
 export function defineConfig(options: RollupOptions[]): RollupOptions[];
