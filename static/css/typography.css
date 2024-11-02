@@ -70,3 +70,16 @@ ul ul {
 ul::marker {
 	color: var(--accent);
 }
+
+.author {
+	margin: 2px;
+	color: var(--dark);
+	font-style: medium;
+}
+
+.attribution {
+	margin-top: 2px;
+	font-style: italic;
+	text-align: center;
+}
+

@@ -20,8 +20,23 @@
 					</h2>
 				</a>
 			</article>
-
+			<p class="author">
+				by {post.author}
+			</p>
 			<p>{post.excerpt}</p>
+			{#if post.categories}
+				<aside class="post-footer">
+					<ul class="post-footer__categories">
+						{#each post.categories as category}
+							<li>
+								<a href="/articles/category/{category}/">
+									{category}
+								</a>
+							</li>
+						{/each}
+					</ul>
+				</aside>
+			{/if}
 		</li>
 	{/each}
 </ul>

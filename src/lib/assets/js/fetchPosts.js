@@ -26,6 +26,7 @@ const fetchPosts = async ({ offset = 0, limit = postsPerPage, category = '' } = 
 
 	sortedPosts = sortedPosts.map(post => ({
 		title: post.title,
+		author: post.author,
 		slug: post.slug,
 		excerpt: post.excerpt,
 		coverImage: post.coverImage,

@@ -18,7 +18,7 @@ export const postsPerPage = 10
 export const navItems = [
 	{
 		title: 'Home',
-		route: '/'
+		route: '/home'
 	}, {
 		title: 'Articles',
 		route: '/articles'
@@ -28,9 +28,5 @@ export const navItems = [
 	}, {
 		title: 'Contact',
 		route: '/contact' 
-	},
-	{
-		title: 'Contribute',
-		route: 'https://theupparser.pages.dev/admin/' 
 	}
 ]

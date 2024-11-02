@@ -2,7 +2,7 @@
 <script>
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
 		data.meta;
 	const { PostContent } = data;
 </script>
@@ -16,38 +16,50 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<!-- <meta property="og:image" content="https://yourdomain.com/image_path" /> -->
+	<meta property="og:image" content="https://theupparser.pages.dev/{coverImage}" />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
+	<meta name="twitter:image" content="https://theupparser.pages.dev/{coverImage}" />
 </svelte:head>
 
 <article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
+	<h1>{title}</h1>
+
+	<p class="author">Written by: <em>{author}</em></p>
+	<p class="author">Edited by: <em>{editor}</em></p>
+
+	<br />
+
 	<img
 		class="cover-image"
 		src={coverImage}
-		alt=""
+		alt={attribution}
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
 	/>
 
-	<h1>{title}</h1>
+	<p class="attribution">{attribution}</p>
+
+	<br />
 
 	<div class="meta">
 		<b>Published:</b>
-		{date}
+		{new Date((new Date(date)).toLocaleDateString())}
 		<br />
 		<b>Updated:</b>
-		{updated}
+		{new Date((new Date(updated)).toLocaleDateString())}
 	</div>
 
 	<svelte:component this={PostContent} />
+	<h2>References:</h2>
+	{references}
+
 
 	{#if categories}
 		<aside class="post-footer">
-			<h2>Posted in:</h2>
+			<h2>Tags:</h2>
 			<ul class="post-footer__categories">
 				{#each categories as category}
 					<li>

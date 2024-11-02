@@ -16,7 +16,7 @@ Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebo
 
 <form on:submit|preventDefault>
 	<div class="form-section">
-		<label for="name">Name</label>x
+		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
 	</div>
 	
@@ -25,29 +25,25 @@ Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebo
 		<input type="email" id="email" placeholder="Email address" />
 	</div>
 
-	<fieldset>
-		<legend>
-			Which option?
-		</legend>
+	<div class="form-section">
+		<label for="subject">
+			Subject
+		</label>
+		<input type="subject" id="subject" placeholder="Subject Here" />
+	</div>
 
-		<div>
-			<input type="radio" name="s" id="s1" value="s1">
-			<label for="s1">Option 1</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s2" value="s2">
-			<label for="s2">Option 2</label>
-		</div>
-		<div>
-			<input type="radio" name="s" id="s3" value="s3">
-			<label for="s3">Option 3</label>
-		</div>
-	</fieldset>
+	<div class="form-section">
+		<label for="message">
+			Message Body
+		</label>
+
+		<textarea type="message" rows=10 id="message"/>
+	</div>
 
 	<div class="form-section">
 		<input type="checkbox" id="c1" >
-		<label for="c1">Sign me up for something!</label>
+		<label for="c1">Receive daily announcements from us!</label>
 	</div>
 
-	<input type="submit" value="Do nothing!">
+	<input type="submit" value="Submit">
 </form>

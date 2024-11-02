@@ -33,7 +33,7 @@ fieldset {
 	border: 0;
 }
 
-input {
+input, textarea{
 	display: block;
 	font-size: inherit;
 	padding: 0.5rem;

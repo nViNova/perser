@@ -28,6 +28,9 @@
 				<a href="/api/rss.xml" data-sveltekit-reload>RSS</a>
 			</li>
 			<li>
+				<a href="https://theupparser.pages.dev/admin">Take a part</a>
+			</li>
+			<li>
 				<p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
 			</li>
 		</ul>
