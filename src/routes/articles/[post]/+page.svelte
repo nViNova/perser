@@ -1,6 +1,6 @@
 <!-- This file renders each individual articles post for reading. Be sure to update the svelte:head below -->
 <script>
-	export let data;
+	let { data } = $props();
 
 	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
 		data.meta;
@@ -52,7 +52,7 @@
 		{new Date((new Date(updated)).toLocaleDateString())}
 	</div>
 
-	<svelte:component this={PostContent} />
+	<PostContent />
 	<h2>References:</h2>
 	{references}
 

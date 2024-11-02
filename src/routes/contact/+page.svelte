@@ -1,4 +1,7 @@
 <script>
+	import { createBubbler, preventDefault } from 'svelte/legacy';
+
+	const bubble = createBubbler();
 	import Callout from '$lib/components/Callout.svelte'
 </script>
 
@@ -14,7 +17,7 @@ Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebo
 
 <Callout>This form does nothing! Website in development.</Callout>
 
-<form on:submit|preventDefault>
+<form onsubmit={preventDefault(bubble('submit'))}>
 	<div class="form-section">
 		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
@@ -37,7 +40,7 @@ Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebo
 			Message Body
 		</label>
 
-		<textarea type="message" rows=10 id="message"/>
+		<textarea type="message" rows=10 id="message"></textarea>
 	</div>
 
 	<div class="form-section">
