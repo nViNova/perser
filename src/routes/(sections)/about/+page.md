@@ -3,10 +3,19 @@
 </svelte:head>
 
 
+
 # The UP Parser
+
+See it for yourself! 
+
+[Cloudflare Pages (Restructure Branch - In Development)](https://theupparser.pages.dev/) 
+
+[Netlify Current Main Branch - (Prototype)](https://theupparser.netlify.app/)
+
+
 Take apart, Take a part.
 
-The official site for the The UP Parser, the official student-run publication organization of the Department of Computer Science at UP Diliman
+The official site for the The UP Parser, the student-run publication organization for the Department of Computer Science at UP Diliman
 
 Proudly made with SvelteKit.
 
