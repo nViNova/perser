@@ -2,7 +2,7 @@
 	"name": "parser",
 	"version": "0.0.2",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --ignore-path .gitignore --check -- plugin-search-dir=. . && eslint --ignore-path .gitignore .",

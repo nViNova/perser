@@ -11,7 +11,7 @@
 </svelte:head>
 
 
-<h1>Contact Us</h1>
+<h1>Contact Us.</h1>
 
 Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebook Page</a>, at our email, dcsupparser@gmail.com, or fill up this form here!
 

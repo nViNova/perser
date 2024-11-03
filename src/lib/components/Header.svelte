@@ -12,6 +12,8 @@
 </script>
 
 
+
+
 <header>
 	<a onclick={preventDefault(focusMain)} class="skip-to-content-link" href="#main">
 		Skip to main content
@@ -22,6 +24,9 @@
 	</a> -->
 	
 	<HamburgerMenuButton />
+	<!-- <nav class="main-nav"> -->
+		<!-- <a href="/"><ul><li>test</li></ul></a> -->
 	<MainNav />
+	<!-- </nav> -->
 
 </header>
