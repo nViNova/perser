@@ -20,7 +20,13 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: '{{type}}-{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: Article Type, name: type, widget: select, options: [parsearch, feature], default: parsearch }
+      - {
+          label: Article Type,
+          name: type,
+          widget: select,
+          options: [parsearch, feature],
+          default: parsearch
+        }
       - { label: Title, name: title, widget: string }
       - { label: Author/s (add 'and' if multiple), name: author, widget: string }
       - { label: Editor/s (add 'and' if multiple), name: editor, widget: string }
@@ -48,4 +54,3 @@ collections:
       - { label: Excerpt, name: excerpt, widget: string }
       - { label: Tags, name: categories, widget: list }
       - { label: Body, name: body, widget: markdown }
-      

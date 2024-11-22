@@ -7,7 +7,7 @@ footer {
 	padding: 2.5rem 2rem;
 }
 
-header{
+header {
 	padding: 0.5rem 0.5rem;
 }
 
@@ -40,7 +40,7 @@ header{
 header {
 	background: var(--accent);
 	color: var(--darker);
-	min-height:10vh;
+	min-height: 10vh;
 	padding-inline: 3%;
 	display: flex;
 	justify-content: space-between;

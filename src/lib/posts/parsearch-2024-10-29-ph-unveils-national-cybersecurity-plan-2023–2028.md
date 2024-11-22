@@ -7,9 +7,9 @@ date: 2024-10-16T00:00:00.000Z
 updated: 2024-10-16T00:00:00.000Z
 coverImage: /media/uploads/94_big.jpg
 attribution: DICT building at Quezon City from Jun Sanchez
-excerpt: "On April 4, 2024, the Philippines launched the National
+excerpt: 'On April 4, 2024, the Philippines launched the National
   Cybersecurity Plan (NCSP) 2023–2028 under the Executive Order #58 to enhance
-  the nation’s cybersecurity landscape."
+  the nation’s cybersecurity landscape.'
 categories:
   - Cybersecurity
   - DICT
@@ -37,6 +37,7 @@ references: >-
 
   Senate of the Philippines. (2024, October 10). Gatchalian urges DICT to elevate the country’s cyber security as a national security concern. https://legacy.senate.gov.ph/press_release/2024/1010_gatchalian1.asp
 ---
+
 On April 4, 2024, the Philippines launched the National Cybersecurity Plan (NCSP) 2023–2028 under the Executive Order #58 to enhance the nation’s cybersecurity landscape.
 
 Developed by the Department of Information and Communications Technology (DICT), the NCSP focuses on establishing a secure and resilient digital ecosystem for all Filipinos.
@@ -49,13 +50,13 @@ In addition, October will be recognized as Cybersecurity Awareness Month to prom
 
 Industry leaders, including cybersecurity experts from Kaspersky, support the NCSP, emphasizing its role in safeguarding national infrastructure against evolving cybercrimes.
 
-As Genie Sugene Gan, Head of Government Affairs and Public Policy of Kaspersky, stated, 
+As Genie Sugene Gan, Head of Government Affairs and Public Policy of Kaspersky, stated,
 
 > “The NCSP provides a strategic framework for addressing cyber threats comprehensively and ensuring the resilience of our digital infrastructure, and we are optimistic about its effective implementation.”
 
 Last 2023, the Philippines experienced the highest number of cyberattacks in Southeast Asia, with 68% of companies experiencing at least one cybersecurity incident including malware, phishing attacks, and password breaches.
 
-Senator Win Gatchalian recently expressed concern on the country’s urgency on cybersecurity. 
+Senator Win Gatchalian recently expressed concern on the country’s urgency on cybersecurity.
 
 > “There should be a sense of urgency because the more that the world is connected, the more that we are prone to cyberattacks. We should be wary of this type of vulnerability in our country”,
 

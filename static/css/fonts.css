@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "League Spartan";
+	font-family: 'League Spartan';
 	src: url('/fonts/LeagueSpartan-Regular.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: "League Spartan";
+	font-family: 'League Spartan';
 	src: url('/fonts/LeagueSpartan-Light.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-	font-family: "League Spartan";
+	font-family: 'League Spartan';
 	src: url('/fonts/LeagueSpartan-Bold.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-	font-family: "League Spartan";
+	font-family: 'League Spartan';
 	src: url('/fonts/LeagueSpartan-SemiBold.ttf'), format('ttf');
 	font-display: swap;
 	font-weight: bold;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-	font-family: "Fira Code";
+	font-family: 'Fira Code';
 	src: url('/fonts/FiraCode-Regular.woff2'), format('woff2');
 	font-display: swap;
 	font-style: normal;
