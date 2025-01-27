@@ -45,6 +45,7 @@
 	<link rel="stylesheet" href="/css/utilities.css" />
 	<link rel="stylesheet" href="/css/code.css" />
 	<link rel="stylesheet" href="/css/prism.css" />
+	<link rel="stylesheet" href="/css/center.css" />
 	<link
 		rel="alternate"
 		type="application/rss+xml"
@@ -60,7 +61,7 @@
 <div class="layout" class:open={$isMenuOpen}>
 	<Header />
 	{#key data.path}
-		<main id="main">
+		<main id="main" tabindex="-1" in:fade|global={transitionIn} out:fade|global={transitionOut}>
 			{@render children?.()}
 		</main>
 	{/key}
