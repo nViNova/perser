@@ -1,7 +1,5 @@
 <!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script>
-	import { run } from 'svelte/legacy';
-
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import { currentPage, isMenuOpen } from '../lib/assets/js/store.js';
@@ -19,9 +17,7 @@
 	 * Updates the global store with the current path. (Used for highlighting
 	 * the current page in the nav, but could be useful for other purposes.)
 	 **/
-	run(() => {
-		currentPage.set(data.path);
-	});
+	currentPage.set(data.path);
 
 	/**
 	 * This pre-fetches all top-level routes on the site in the background for faster loading.
@@ -49,6 +45,7 @@
 	<link rel="stylesheet" href="/css/utilities.css" />
 	<link rel="stylesheet" href="/css/code.css" />
 	<link rel="stylesheet" href="/css/prism.css" />
+	<link rel="stylesheet" href="/css/center.css" />
 	<link
 		rel="alternate"
 		type="application/rss+xml"

@@ -23,13 +23,11 @@ const config = {
 		prerender: {
 			entries: [
 				'*',
-				'/api/posts/page/*',
-				'/articles/category/*/page/',
-				'/articles/category/*/page/*',
-				'/articles/category/page/',
-				'/articles/category/page/*',
-				'/articles/page/',
-				'/articles/page/*'
+				'/api/posts/page/[page]',
+				'/articles/category/[category]/page/[page]',
+				'/articles/category/page/[page]',
+				'/articles/page/[page]',
+				'/articles/category/[category]/page'
 			]
 		}
 	}

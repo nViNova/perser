@@ -4,7 +4,9 @@
 </script>
 
 <svelte:head>
-	<link rel="stylesheet" href="/css/center.css" />
+
 </svelte:head>
 
-{@render children?.()}
+<div class="center">
+    {@render children?.()}
+</div>

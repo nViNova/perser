@@ -149,3 +149,19 @@ li {
 	color: var(--white);
 	line-height: normal;
 }
+
+.articles-container {
+	width: 100%;
+	max-width: 42rem;
+	margin: 6rem auto;
+	padding: 0 1rem;
+}
+
+.main-body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-self: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	/* background-color: #FFFFFF; */
+}
