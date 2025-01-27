@@ -19,9 +19,7 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter({
-			precompress: true
-		}),
+		adapter: adapter(),
 		prerender: {
 			entries: [
 				'*',
