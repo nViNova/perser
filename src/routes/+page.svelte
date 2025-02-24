@@ -5,7 +5,7 @@
 	let { data } = $props();
 
 	let items = [
-	{ label: "Home",
+	{ label: "Can I Go Home Now",
 		 value: 1,
 		 component: PostsList,
 		 propsval: data.posts
