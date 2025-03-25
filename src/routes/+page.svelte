@@ -5,7 +5,7 @@
 	let { data } = $props();
 
 	let items = [
-	{ label: "Home",
+	{ label: "All",
 		 value: 1,
 		 component: PostsList,
 		 propsval: data.posts
@@ -39,12 +39,10 @@
 	</div>
 </div>
 
-<div class="main-body">
-	<Tabs items={items} />
+<div>
+
 </div>
 
-<!-- <div class="articles-container">
-	<PostsList posts={data.posts} />
-</div> -->
-
-
+<div>
+	<Tabs items={items} />
+</div>

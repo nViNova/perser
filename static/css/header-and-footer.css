@@ -39,7 +39,7 @@ header {
 
 header {
 	background: var(--darker);
-	color: var(--lightAccent);
+	color: var(--white);
 	min-height: 10vh;
 	padding-inline: 3%;
 	display: flex;
@@ -87,7 +87,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background: var(--darker);
-	color: var(--paper);
+	color: var(--lightAccent);
 	transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 

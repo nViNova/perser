@@ -79,22 +79,15 @@ li {
 .posts-recent {
 	list-style-type: none;
 	padding: 0;
-	/* 
-	li {
-		margin-bottom: 6rem;
-	}
-
-	img + h2 {
-		margin-top: 1rem;
-	} */
-
 	a {
 		display: block;
 	}
 }
 
 .post-sidebar {
-	max-width: 30rem;
+	/* align-self: end; */
+	justify-self: end;
+	max-width: 20rem;
 }
 
 .post {
