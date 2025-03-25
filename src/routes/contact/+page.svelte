@@ -1,6 +1,5 @@
 <script>
 	import { createBubbler, preventDefault } from 'svelte/legacy';
-
 	const bubble = createBubbler();
 	import Callout from '$lib/components/Callout.svelte'
 </script>
@@ -10,6 +9,8 @@
 	<title>Contact Us</title>
 </svelte:head>
 
+
+<main class="center">
 
 <h1>Contact Us.</h1>
 
@@ -50,3 +51,5 @@ Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebo
 
 	<input type="submit" value="Submit">
 </form>
+
+</main>

@@ -1,15 +1,8 @@
 <svelte:head>
-
 <title>About</title>
 </svelte:head>
 
 # The UP Parser
-
-See it for yourself!
-
-[Cloudflare Pages (Restructure Branch - In Development)](https://theupparser.pages.dev/)
-
-[Netlify Current Main Branch - (Prototype)](https://theupparser.netlify.app/)
 
 Take apart, Take a part.
 

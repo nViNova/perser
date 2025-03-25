@@ -1,9 +1,27 @@
+
+/* GENERAL LAYOUT */
+
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
 	font-family: inherit;
 	max-width: 100%;
+}
+
+/* Pages that are centered */
+
+.center {
+
+	width: 100%;
+	max-width: 42rem;
+	margin: 6rem auto;
+	padding: 0 1rem;
+
+	img {
+		max-width: 42rem;
+	}
+
 }
 
 .layout {
@@ -19,24 +37,11 @@ img {
 	height: auto;
 }
 
-.post {
-	h1 {
-		margin-bottom: 1rem;
-	}
-
-	.meta {
-		font-size: 0.8rem;
-		margin-bottom: 4rem;
-	}
-
-	img + h1 {
-		margin-top: 1rem;
-	}
-}
-
 li {
 	margin-bottom: 0.25rem;
 }
+
+/* ARTICLES PAGE LAYOUT */
 
 .posts-list {
 	list-style-type: none;
@@ -55,6 +60,62 @@ li {
 	}
 }
 
+
+/* PER POST LAYOUT */
+
+.post-page {	
+	margin: 6rem auto;
+	padding: 0 1rem;
+	display: flex;
+	/* grid-template-columns: 2fr 1fr; */
+	justify-items: center;
+	/* align-items: center; */
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	article{
+		max-width: 42rem;
+	}
+}
+
+.posts-recent {
+	list-style-type: none;
+	padding: 0;
+/* 
+	li {
+		margin-bottom: 6rem;
+	}
+
+	img + h2 {
+		margin-top: 1rem;
+	} */
+
+	a {
+		display: block;
+	}
+}
+
+.post-sidebar {
+	max-width: 30rem;
+}
+
+.post {
+
+	h1 {
+		margin-bottom: 1rem;
+	}
+
+	.meta {
+		font-size: 0.8rem;
+		margin-bottom: 4rem;
+	}
+
+	img + h1 {
+		margin-top: 1rem;
+	}
+
+}
+
 .post-footer__categories {
 	padding: 0;
 	display: flex;
@@ -68,9 +129,9 @@ li {
 }
 
 .post-footer a {
-	background-color: var(--lightAccent);
+	background-color: var(--accent);
 	padding: 0.5rem 0.75rem;
-	text-transform: uppercase;
+	text-transform: uppercase;	
 	font-family: var(--primaryFont);
 	font-weight: bold;
 }
@@ -100,6 +161,10 @@ li {
 .icon-link:hover::before {
 	opacity: 1;
 }
+
+
+
+/* HOMEPAGE HERO LAYOUT */
 
 .hero {
 	display: flex;
@@ -157,6 +222,8 @@ li {
 	margin: 6rem auto;
 	padding: 0 1rem;
 }
+
+/* HOME PAGE BODY LAYOUT */
 
 .main-body {
 	display: flex;
