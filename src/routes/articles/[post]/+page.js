@@ -2,7 +2,7 @@ import { error } from '@sveltejs/kit';
 
 export const load = async ({ url, fetch, params }) => {
 	try {
-		const post = await import(`../../../../lib/posts/${params.post}.md`);
+		const post = await import(`../../../lib/posts/${params.post}.md`);
 
 		const postRes = await fetch(`${url.origin}/api/posts.json`);
 		const posts = await postRes.json();
