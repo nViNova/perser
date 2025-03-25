@@ -1,26 +1,25 @@
 <script>
-	import PostsList from '$lib/components/PostsList.svelte';
-	import Tabs from '$lib/components/tabs.svelte';
+	import HomeNews from '$lib/components/HomeNews.svelte';
 	import { siteTitle } from '$lib/config';
 	let { data } = $props();
 
-	let items = [
-	{ label: "All",
-		 value: 1,
-		 component: PostsList,
-		 propsval: data.posts
-		},
-    { label: "News",
-		 value: 2,
-		 component: PostsList,
-		 propsval: data.news
-		},
-	{ label: "Features",
-		 value: 3,
-		 component: PostsList,
-		 propsval: data.features
-		}
-	];
+	// let items = [
+	// { label: "All",
+	// 	 value: 1,
+	// 	 component: PostsList,
+	// 	 propsval: data.posts
+	// 	},
+    // { label: "News",
+	// 	 value: 2,
+	// 	 component: PostsList,
+	// 	 propsval: data.news
+	// 	},
+	// { label: "Features",
+	// 	 value: 3,
+	// 	 component: PostsList,
+	// 	 propsval: data.features
+	// 	}
+	// ];
 </script>
 
 <svelte:head>
@@ -39,10 +38,16 @@
 	</div>
 </div>
 
-<div>
+<div class="home-body">
+	<section>
+		<h2>
+			Latest Articles
+		</h2>
+	</section>
 
+	<HomeNews posts={data.posts}/>
 </div>
 
-<div>
+<!-- <div>
 	<Tabs items={items} />
-</div>
+</div> -->

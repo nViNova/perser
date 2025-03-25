@@ -220,3 +220,63 @@ li {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 	/* background-color: #FFFFFF; */
 }
+
+.home-body{
+	display: flex;
+	flex-direction: column;
+	/* background-color: var(--darker); */
+
+	section{
+		/* top right bottom left */
+		padding: 0em 7em 0em 7em;
+	}
+
+	h2{
+		/* color: var(--white); */
+		margin: 2rem 0 2rem;
+	}
+}
+
+.home-posts-grid{
+	padding: 7rem 7rem 7rem 7rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	color: var(--white);
+	background-color: var(--darker);
+}
+
+.home-grid-item{
+
+	display: grid;
+	max-width: 40rem;
+	grid-template-columns: 1fr 1fr;
+	flex-wrap: wrap;
+	font-size: 12px;
+	margin: 1rem 1rem 1rem 1rem;
+	
+	img{
+		margin-right: 1rem;
+		max-width: 16rem;
+		max-height: 10rem;
+		object-fit: cover;
+	}
+	
+	article{
+		margin-left: 1rem;
+		max-width: 15rem;
+	}
+
+	h6{
+		color: var(--white);
+		margin: 0rem 0 1rem;
+	}
+
+	.author{
+		color: var(--white);
+	}
+
+}

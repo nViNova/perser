@@ -17,7 +17,7 @@
 	<title>Category: {category}</title>
 </svelte:head>
 
-
+<main class="center">
 <h1>Articles category: {category}</h1>
 
 {#if posts.length}
@@ -28,3 +28,4 @@
 
 	<p><a href="/articles">Back to Articles</a></p>
 {/if}
+</main>
