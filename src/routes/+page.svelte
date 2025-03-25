@@ -29,8 +29,8 @@
 
 <div class="hero">
 	<div class="caption">
-		<h1>Take <p>apart</p>,</h1>
-		<h1>Take <p>a part</p>.</h1>
+		<h1>Take <p class="heading-gradient">apart</p>,</h1>
+		<h1>Take <p class="heading-gradient">a part</p>.</h1>
 	</div>
 	<!-- arrow down -->
 	<div class="icon">

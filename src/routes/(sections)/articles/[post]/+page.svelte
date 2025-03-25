@@ -1,6 +1,7 @@
 <!-- This file renders each individual articles post for reading. Be sure to update the svelte:head below -->
 <script>
 	let { data } = $props();
+	
 
 	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
 		data.meta;
