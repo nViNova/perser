@@ -238,7 +238,7 @@ li {
 }
 
 .home-posts-grid{
-	padding: 7rem 7rem 7rem 7rem;
+	padding: 3rem 3rem 3rem 3rem;
 
 	display: flex;
 	flex-direction: row;
@@ -251,22 +251,21 @@ li {
 
 .home-grid-item{
 
-	display: grid;
+	display: flex;
 	max-width: 40rem;
-	grid-template-columns: 1fr 1fr;
 	flex-wrap: wrap;
 	font-size: 12px;
 	margin: 1rem 1rem 1rem 1rem;
 	
 	img{
-		margin-right: 1rem;
+		margin: 1rem 2rem 1rem 0rem;
 		max-width: 16rem;
 		max-height: 10rem;
 		object-fit: cover;
 	}
 	
 	article{
-		margin-left: 1rem;
+		margin: 1rem 1rem 1rem 1rem;
 		max-width: 15rem;
 	}
 
