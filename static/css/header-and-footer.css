@@ -38,8 +38,8 @@ header {
 }
 
 header {
-	background: var(--accent);
-	color: var(--darker);
+	background: var(--darker);
+	color: var(--lightAccent);
 	min-height: 10vh;
 	padding-inline: 3%;
 	display: flex;
