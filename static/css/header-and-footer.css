@@ -49,29 +49,13 @@ header {
 
 @media (min-width: 48rem) {
 	header {
-		min-height: auto;
+		min-height: 0;
+		max-height: 8vh;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 		height: auto;
 	}
 }
-
-/* .site-title {
-	font-family: var(--accentFont);
-	font-size: 2.1rem;
-	line-height: 1;
-	color: inherit;
-	text-align: center;
-	margin: 0;
-	display: block;
-	font-size: 1.4rem;
-	font-weight: bold;
-
-	@media (min-width: 48rem) {
-		width: 100%;
-		font-size: 1.6rem;
-	}
-} */
 
 .menu-button {
 	margin: 0;
@@ -105,6 +89,11 @@ header {
 	background: var(--darker);
 	color: var(--paper);
 	transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.header-img{
+	width: 40px;
+	margin-right: 20px;
 }
 
 .main-nav.open {
@@ -167,10 +156,17 @@ header {
 	display: block;
 	width: 100%;
 	text-align: center;
-	margin-bottom: calc(0.2rem + 2vh);
+	/* margin-bottom: calc(0.2rem + 2vh); */
 }
 
 @media (min-width: 48rem) {
+
+	.header-img{
+		width: 40px;
+		padding-top: 4px;
+		margin-right: 20px;
+	}
+
 	header .main-nav {
 		opacity: 1;
 		transform: none;
@@ -184,7 +180,7 @@ header {
 	}
 
 	header .main-nav ul {
-		margin: 1rem auto 0;
+		margin: 0 auto 0;
 		/* padding-top: 0.5rem; */
 		/* border-top: 1px solid var(--dark); */
 		width: max-content;

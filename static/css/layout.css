@@ -60,6 +60,7 @@ li {
 /* PER POST LAYOUT */
 
 .post-page {
+	width: 100%;
 	margin: 6rem auto;
 	padding: 0 1rem;
 	display: flex;
@@ -70,6 +71,7 @@ li {
 	justify-content: space-evenly;
 
 	article {
+		width: 100%;
 		max-width: 42rem;
 	}
 }
