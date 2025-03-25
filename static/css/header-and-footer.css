@@ -87,7 +87,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	background: var(--darker);
-	color: var(--lightAccent);
+	color: var(--white);
 	transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
