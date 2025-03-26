@@ -1,8 +1,8 @@
-<!-- This file renders each individual articles post for reading. Be sure to update the svelte:head below -->
+<!-- This file renders each individual article post for reading. Be sure to update the svelte:head below -->
 <script>
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
+	import Giscus from "@giscus/svelte";
 	let { data } = $props();
-
 
 	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
 		data.meta;
@@ -82,7 +82,6 @@
 		<h2>References:</h2>
 		{references}
 	
-	
 		{#if categories}
 			<aside class="post-footer">
 				<h2>Tags:</h2>
@@ -97,12 +96,28 @@
 				</ul>
 			</aside>
 		{/if}
-	
-	
+
+		<Giscus
+        repo="nViNova/perser"
+        repo-id="R_kgDONG26Yg"
+        category="Announcements"
+        category-id="DIC_kwDONG26Ys4Coeb5"
+        mapping="title"
+        strict="0"
+        reactions-enabled="1"
+        emit-metadata="0"
+        input-position="top"
+        theme="light"
+        lang="en"
+        loading="lazy"
+        crossorigin="anonymous"
+        async>
+		</Giscus>
+		
 	</article>
 
 	<div class="post-sidebar">
-		<h3>Recent Posts</h3>
+		<h3>Related Posts</h3>
 
 		<hr class="solid">
 		<RecentPosts posts={posts}/>
