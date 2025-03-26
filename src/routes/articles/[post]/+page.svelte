@@ -1,7 +1,6 @@
 <!-- This file renders each individual article post for reading. Be sure to update the svelte:head below -->
 <script>
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
-	import Giscus from "@giscus/svelte";
 	let { data } = $props();
 
 	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
@@ -97,22 +96,22 @@
 			</aside>
 		{/if}
 
-		<Giscus
-        repo="nViNova/perser"
-        repo-id="R_kgDONG26Yg"
-        category="Site"
-        category-id="DIC_kwDONG26Ys4Coeet"
-        mapping="title"
-        strict="0"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        theme="light"
-        lang="en"
-        loading="lazy"
+		<script src="https://giscus.app/client.js"
+        data-repo="nViNova/perser"
+        data-repo-id="R_kgDONG26Yg"
+        data-category="Site"
+        data-category-id="DIC_kwDONG26Ys4Coeet"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
-		</Giscus>
+		</script>
 
 	</article>
 
