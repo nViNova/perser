@@ -100,8 +100,8 @@
 		<Giscus
         repo="nViNova/perser"
         repo-id="R_kgDONG26Yg"
-        category="Announcements"
-        category-id="DIC_kwDONG26Ys4Coeb5"
+        category="Site"
+        category-id="DIC_kwDONG26Ys4Coeet"
         mapping="title"
         strict="0"
         reactions-enabled="1"
@@ -113,7 +113,7 @@
         crossorigin="anonymous"
         async>
 		</Giscus>
-		
+
 	</article>
 
 	<div class="post-sidebar">
