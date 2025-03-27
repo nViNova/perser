@@ -119,7 +119,7 @@
 		<h3>Related Posts</h3>
 
 		<hr class="solid">
-		<RecentPosts posts={posts}/>
+		<RecentPosts posts={ posts }/>
 	</div>
 
 </div>
