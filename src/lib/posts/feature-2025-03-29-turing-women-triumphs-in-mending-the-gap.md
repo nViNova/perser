@@ -4,12 +4,13 @@ title: 'Turing Women: Triumphs in Mending the Gap'
 author: Aneko Delfin
 editor: Abram Marcelo
 date: 2025-03-29T16:38:00
-updated: 2025-03-29T16:38:00
+updated: 2025-03-29T16:43:00
 coverImage: /media/uploads/Version%202%20(wide)%20(1).png
-attribution: Graphics by John Marc Palpal-latoc
+attribution: Graphics by John Marck Palpal-latoc
 excerpt: As we head towards the end of Women’s Month, we highlight the impact and significance that women hold in the field computer science. In a scientific field rife with gender inequality and discrimination, these women have established their legacies through their intellect and passion for computing. Their pioneering works have paved the way for major developments in cryptography, compiler optimization, and distributed systems. Join us in celebrating the three women who have been awarded the highest distinction in computer science—the Turing Award.
 categories:
-  - Womens-Month;Turing-Award
+  - Womens-Month
+  - Turing-Award
 references: |-
   - Allen, F. (2001, August 2). _Frances "Fran" Allen: An interview conducted by Janet Abbate for the IEEE History Center_ (Interview No. 573). The Institute of Electrical and Electronics Engineers, Inc. [https://ethw.org/Oral-History:Frances\_%22Fran%22\_Allen](https://ethw.org/Oral-History:Frances_%22Fran%22_Allen) 
   - D’Agostino, S. (2020, January 6). Why Have So Few Women Won the Most Important Award in Computing?. _Slate_. [https://slate.com/technology/2020/01/turing-award-acm-women-recipients.html](https://slate.com/technology/2020/01/turing-award-acm-women-recipients.html) 
@@ -31,9 +32,6 @@ This imbalance is exactly why Francis Allen, Barbara Liskov, and Shafi Goldwasse
 ![Image source: https://newsarchive.berkeley.edu/news/berkeleyan/2008/01/23_allen.shtml](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfIub0_AO9LRgVMFxCeOKVx4LblkMBPzbX-C_tUtPekroRaUijrDPOD2sjEHR_Ux_KVM6KZhXrdAD_OSLM35txSKVi6P7dNsBbNy7mxmCU9HuZB8yUe8D6LBRMjGPH_11AgZPb1UQ?key=-RZSEfMl-afBlFocgBv3Ey-r)
 
 Image source: https://newsarchive.berkeley.edu/news/berkeleyan/2008/01/23\_allen.shtml
-
-
-
 
 In 2006, Frances Allen became the first woman to receive the Turing Award, recognized for her work in compiler optimization. Her research revolutionized the way programs are translated into machine code, making software run more efficiently on modern hardware.
 
