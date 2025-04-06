@@ -91,7 +91,7 @@ header {
 	transition: all 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.header-img{
+.header-img {
 	width: 40px;
 	margin-right: 20px;
 }
@@ -160,8 +160,7 @@ header {
 }
 
 @media (min-width: 48rem) {
-
-	.header-img{
+	.header-img {
 		width: 40px;
 		padding-top: 4px;
 		margin-right: 20px;

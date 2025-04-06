@@ -28,15 +28,30 @@ collections:
           default: parsearch
         }
       - { label: Title, name: title, widget: string }
-      - { label: Author/s, name: author, widget: list, field: {label: Author, name: author, widget: string} }
-      - { label: Add Author Biography?, name: isAuthorBlock, widget: boolean, default: false}
-      - { label: Editor/s), name: editor, widget: list, field: {label: Editor, name: editor, widget: string} }
+      - {
+          label: Author/s,
+          name: author,
+          widget: list,
+          field: { label: Author, name: author, widget: string }
+        }
+      - { label: Add Author Biography?, name: isAuthorBlock, widget: boolean, default: false }
+      - {
+          label: Editor/s),
+          name: editor,
+          widget: list,
+          field: { label: Editor, name: editor, widget: string }
+        }
       - { label: Publish Date, name: date, widget: datetime }
       - { label: Update Date, name: updated, widget: datetime }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
-      - { label: Tags, name: categories, widget: list, field: {label: Tag, name: tag, widget: string} }
+      - {
+          label: Tags,
+          name: categories,
+          widget: list,
+          field: { label: Tag, name: tag, widget: string }
+        }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
 
@@ -53,19 +68,23 @@ collections:
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
-      - { label: Tags, name: categories, widget: list, field: {label: Tag, name: tag, widget: string} }
+      - {
+          label: Tags,
+          name: categories,
+          widget: list,
+          field: { label: Tag, name: tag, widget: string }
+        }
       - { label: Body, name: body, widget: markdown }
-    
+
   - name: author
     label: Author
     folder: src/lib/authors
     create: true
     slug: 'author-{{name}}'
     fields:
-      - { label: Layout, name: layout, widget: hidden, default: author}
+      - { label: Layout, name: layout, widget: hidden, default: author }
       - { label: Name, name: name, widget: string }
-      - { label: Short Biography, name: bio, widget: markdown}
-
+      - { label: Short Biography, name: bio, widget: markdown }
 
 media_libraries:
   default:
