@@ -30,8 +30,8 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Author/s, name: author, widget: list, field: {label: Author, name: author, widget: string} }
       - { label: Editor/s), name: editor, widget: list, field: {label: Editor, name: editor, widget: string} }
-      - { label: Publish Date, name: date, widget: datetime, time_format: false }
-      - { label: Update Date, name: updated, widget: datetime, time_format: false }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Update Date, name: updated, widget: datetime }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
@@ -48,7 +48,7 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: announcement }
       - { label: Title, name: title, widget: string }
       - { label: Type, name: type, widget: string }
-      - { label: Publish Date, name: date, widget: datetime, time_format: false }
+      - { label: Publish Date, name: date, widget: datetime }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }

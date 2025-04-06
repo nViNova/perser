@@ -1,4 +1,5 @@
 <script>
+	import ListItems from "./listItems.svelte";
 	let { posts = [] } = $props();
 </script>
 
@@ -21,7 +22,7 @@
 				</a>
 			</article>
 			<p class="author">
-				by {post.author}
+				by <ListItems items={post.author}></ListItems>
 			</p>
 			<p>{post.excerpt}</p>
 			{#if post.categories}

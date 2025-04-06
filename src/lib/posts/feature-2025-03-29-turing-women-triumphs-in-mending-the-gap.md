@@ -1,8 +1,10 @@
 ---
 type: feature
 title: 'Turing Women: Triumphs in Mending the Gap'
-author: Aneko Delfin
-editor: Abram Marcelo
+author: 
+  - Aneko Delfin
+editor: 
+  - Abram Marcelo
 date: 2025-03-29T16:38:00
 updated: 2025-03-29T16:43:00
 coverImage: /media/uploads/Version%202%20(wide)%20(1).png

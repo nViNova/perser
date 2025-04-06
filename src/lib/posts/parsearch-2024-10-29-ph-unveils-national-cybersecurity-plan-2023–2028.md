@@ -1,8 +1,10 @@
 ---
 type: parsearch
 title: PH Unveils National Cybersecurity Plan 2023–2028
-author: Euri Barbon
-editor: Abram Marcelo
+author: 
+  - Euri Barbon
+editor: 
+  - Abram Marcelo
 date: 2024-10-16T00:00:00.000Z
 updated: 2024-10-16T00:00:00.000Z
 coverImage: /media/uploads/94_big.jpg
