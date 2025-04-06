@@ -5,6 +5,7 @@ author:
   - test author 1
   - test author 2
   - test author 3
+isAuthorBlock: true
 editor:
   - test editor 1
   - test editor 2

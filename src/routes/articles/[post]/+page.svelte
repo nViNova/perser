@@ -2,9 +2,11 @@
 <script>
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
 	import ListItems from "$lib/components/ListItems.svelte";
+
+	import AuthorBlock from "$lib/components/AuthorBlock.svelte";
 	let { data } = $props();
 
-	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
+	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references, isAuthorBlock } =
 		data.meta;
 	const { PostContent } = data;
 	const { posts } = data;
@@ -98,12 +100,13 @@
 			</aside>
 		{/if}
 
-		<h2>About the Author</h2>
+		{#if isAuthorBlock}
+			<h2>About the Author</h2>
 
-			{#each author as authr}
-				{authr}
-			{/each}
-
+				{#each author as authr}
+					{authr}
+				{/each}
+		{/if}
 
 		<script src="https://giscus.app/client.js"
         data-repo="nViNova/perser"
