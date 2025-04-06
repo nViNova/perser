@@ -1,7 +1,7 @@
 <!-- This file renders each individual article post for reading. Be sure to update the svelte:head below -->
 <script>
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
-	import ListItems from "$lib/components/listItems.svelte";
+	import ListItems from "$lib/components/ListItems.svelte";
 	let { data } = $props();
 
 	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
@@ -97,6 +97,13 @@
 				</ul>
 			</aside>
 		{/if}
+
+		<h2>About the Author</h2>
+
+			{#each author as authr}
+				{authr}
+			{/each}
+
 
 		<script src="https://giscus.app/client.js"
         data-repo="nViNova/perser"

@@ -1,5 +1,5 @@
 <script>
-	import ListItems from "./listItems.svelte";
+	import ListItems from "./ListItems.svelte";
 
 	let { posts = [] } = $props();
 </script>
