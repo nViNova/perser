@@ -30,12 +30,12 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Author/s (add 'and' if multiple), name: author, widget: string }
       - { label: Editor/s (add 'and' if multiple), name: editor, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
-      - { label: Update Date, name: updated, widget: datetime }
+      - { label: Publish Date, name: date, widget: datetime, time_format: false }
+      - { label: Update Date, name: updated, widget: datetime, time_format: false }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
-      - { label: Tags, name: categories, widget: list }
+      - { label: Tags, name: categories, widget: list, field: {label: Tag, name: tag, widget: string} }
       - { label: Body, name: body, widget: markdown }
       - { label: References, name: references, widget: markdown }
 
@@ -48,9 +48,22 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: announcement }
       - { label: Title, name: title, widget: string }
       - { label: Type, name: type, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Publish Date, name: date, widget: datetime, time_format: false }
       - { label: Featured Image, name: coverImage, widget: image }
       - { label: Attribution, name: attribution, widget: string }
       - { label: Excerpt, name: excerpt, widget: string }
       - { label: Tags, name: categories, widget: list }
       - { label: Body, name: body, widget: markdown }
+
+
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image: # original format
+          format: webp # new format, only `webp` is supported
+          quality: 85 # default: 85
+          # width: 2048 # default: original size
+          # height: 2048 # default: original size
+        svg:
+          optimize: true
