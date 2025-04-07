@@ -3,6 +3,9 @@
 import { page } from '$app/stores'
 </script>
 
+
+<main class="center">
+
 <h2>{$page.status}</h2>
 <p class="subhead">{$page.error.message}</p>
 
@@ -10,3 +13,4 @@ import { page } from '$app/stores'
 <ul>
 	<li><a href="/">Home</a></li>
 </ul>
+</main>

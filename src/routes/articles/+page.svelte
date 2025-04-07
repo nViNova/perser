@@ -12,8 +12,11 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
+<main class="center">
+
 <h1>Articles.</h1>
 
 <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />
+</main>
