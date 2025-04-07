@@ -6,7 +6,7 @@
 
 
 <svelte:head>
-	<title>Test</title>
+	<title>Contact Us</title>
 </svelte:head>
 
 
