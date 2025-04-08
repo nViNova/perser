@@ -38,6 +38,32 @@ li {
 	margin-bottom: 0.25rem;
 }
 
+/* CATEGORIES PAGE LAYOUT */
+
+.posts-list-category {
+	list-style-type: none;
+	padding: 0;
+	margin	: 0;
+
+	li {
+		margin-bottom: 2rem;
+	}
+
+	.posts-list-footer-categories {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin: 0;	
+		
+		li {
+			list-style-type: none;
+			padding: 0;	
+		}
+	}
+}
+
 /* ARTICLES PAGE LAYOUT */
 
 .posts-list {
@@ -115,14 +141,32 @@ li {
 .post-footer li {
 	display: inline-block;
 	font-size: 0.8rem;
+	justify-content: left;
 }
 
 .post-footer a {
 	background-color: var(--accent);
 	padding: 0.5rem 0.75rem;
-	text-transform: uppercase;
 	font-family: var(--primaryFont);
 	font-weight: bold;
+	justify-content: left;
+	text-decoration: none;
+}
+
+.post-footer-categories a {
+	color: goldenrod;
+	padding: 0.5rem 0.75rem;
+	font-family: var(--primaryFont);
+	font-weight: bold;
+	justify-content: left;
+	text-decoration: none;
+}
+
+.post-footer-categories li {
+	display: inline-block;
+	font-size: 0.8rem;
+	justify-content: left;
+	font-size: 1.6rem;
 }
 
 .icon-link {
@@ -278,4 +322,4 @@ li {
 	}
 }
 
-/* CATEGORIES PAGE LAYOUT */
+
