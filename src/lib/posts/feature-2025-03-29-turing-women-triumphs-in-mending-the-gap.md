@@ -1,8 +1,10 @@
 ---
 type: feature
 title: 'Turing Women: Triumphs in Mending the Gap'
-author: Aneko Delfin
-editor: Abram Marcelo
+author:
+  - Aneko Delfin
+editor:
+  - Abram Marcelo
 date: 2025-03-29T16:38:00
 updated: 2025-03-29T16:43:00
 coverImage: /media/uploads/Version%202%20(wide)%20(1).png
@@ -21,9 +23,10 @@ references: |-
   - Steele, G. (n.d.). Frances Allen - A.M. Turing Award Laureate. _Association for Computing Machinery._ [https://amturing.acm.org/award\_winners/allen\_1012327.cfm](https://amturing.acm.org/award_winners/allen_1012327.cfm) 
   - Van Vleck, T. (n.d.). Barbara Liskov - A.M. Turing Award Laureate. _Association for Computing Machinery._ [https://amturing.acm.org/award\_winners/liskov\_1108679.cfm](https://amturing.acm.org/award_winners/liskov_1108679.cfm)
 ---
+
 A million-dollar sponsorship from Google, a trophy from the world’s largest computing society, and a place among the most influential figures in the field: these are what the Turing Award offers its laureates, often regarded as the _Nobel Prize in Computing_.
 
-Yet, out of more than 70 recipients, only three have been women. In fact, it has been over a decade since the last female computer scientist received this honor. A telltale sign, a blaring hint to the systemic bias against women that has long aggravated the gender gap in computing. 
+Yet, out of more than 70 recipients, only three have been women. In fact, it has been over a decade since the last female computer scientist received this honor. A telltale sign, a blaring hint to the systemic bias against women that has long aggravated the gender gap in computing.
 
 This imbalance is exactly why Francis Allen, Barbara Liskov, and Shafi Goldwasser deserve greater recognition, not only for their groundbreaking contributions but also for marking their legacy as women who transformed the field of computing.
 
@@ -67,12 +70,12 @@ What sparked Goldwasser’s curiosity in computer science was an algorithms and 
 
 As a woman in a male-dominated field, Goldwasser recalls asserting to her colleagues that she was “someone to be listened to and reckoned with.” She further stressed the weight of addressing such prejudice, stating,
 
- > “We must keep raising this disparity throughout our scientific community to emphasize the need for change, supported by evidence. Achieving gender equality in science will lead to better science, a better workforce, and better educated children in future generations.”
+> “We must keep raising this disparity throughout our scientific community to emphasize the need for change, supported by evidence. Achieving gender equality in science will lead to better science, a better workforce, and better educated children in future generations.”
 
 **Painfully Few, But Huge Steps**
 
-Allen, raised a farmer’s daughter; Liskov, who faced gender bias firsthand; and Goldwasser, entering with no prior programming experience—all reached the podium and defined the foundations that computer science students now take as gospel. They have even managed to create entire subfields in a field where stereotypes continue to diminish women’s scientific talent. 
+Allen, raised a farmer’s daughter; Liskov, who faced gender bias firsthand; and Goldwasser, entering with no prior programming experience—all reached the podium and defined the foundations that computer science students now take as gospel. They have even managed to create entire subfields in a field where stereotypes continue to diminish women’s scientific talent.
 
-These major wins hold more than just symbolic value; they are not just rare moments to be temporarily celebrated, virtue-signaled and forgotten. They impart a roadmap for progress to society, one that we hope will elevate the contributions of women in STEM. The fact that women have comprised just 4% of winners over half a century remains disappointing. Still, these pioneers have undeniably inspired generations of women to come. 
+These major wins hold more than just symbolic value; they are not just rare moments to be temporarily celebrated, virtue-signaled and forgotten. They impart a roadmap for progress to society, one that we hope will elevate the contributions of women in STEM. The fact that women have comprised just 4% of winners over half a century remains disappointing. Still, these pioneers have undeniably inspired generations of women to come.
 
 It’s long overdue for us to amplify the ongoing call to nominate more women and demand equal representation in both academia and industry. Just as these transformative trio devised proofs to solve problems in computer science, let their footprint prove that the hurdles to inclusivity can and must be broken.

@@ -1,12 +1,16 @@
 <!-- This file renders each individual article post for reading. Be sure to update the svelte:head below -->
 <script>
 	import RecentPosts from "$lib/components/RecentPosts.svelte";
+	import ListItems from "$lib/components/ListItems.svelte";
+
+	import AuthorBlock from "$lib/components/AuthorBlock.svelte";
 	let { data } = $props();
 
-	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references } =
+	const { title, author, editor, excerpt, date, updated, coverImage, attribution, coverWidth, coverHeight, categories, references, isAuthorBlock } =
 		data.meta;
 	const { PostContent } = data;
 	const { posts } = data;
+
 </script>
 
 <svelte:head>
@@ -50,8 +54,8 @@
 	
 		<!-- Authors -->
 	
-		<p class="author">Written by: <em>{author}</em></p>
-		<p class="author">Edited by: <em>{editor}</em></p>
+		<p class="author">Written by: <em><ListItems items={author}></ListItems></em></p>
+		<p class="author">Edited by: <em><ListItems items={editor}></ListItems></em></p>
 	
 		<br />
 	
@@ -94,6 +98,14 @@
 					{/each}
 				</ul>
 			</aside>
+		{/if}
+
+		{#if isAuthorBlock}
+			<h2>About the Author</h2>
+
+				{#each author as authr}
+					{authr}
+				{/each}
 		{/if}
 
 		<script src="https://giscus.app/client.js"
