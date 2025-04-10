@@ -1,26 +1,27 @@
 <script>
-	import HomeNews from "./HomeNews.svelte";
     import HomeTabElements from "./HomeTabElements.svelte";
 
 
 	let activeItem = $state('Featured');
 	let items = ['Featured', 'Top', 'New']
-	let { data } = $props();
 
 	const tabChange = (e) => {
 		activeItem = e.detail
 	}
 
+	let { posts = [] } = $props();
+
+
 </script>
 
 
-<div class="home-body">
+<div class="home-tab-component">
 	
 	<HomeTabElements {activeItem} {items} on:tabChange={tabChange}/>
 	{#if activeItem === 'Featured'}
 		<div class="tab-elements">
-			<!-- <HomeNews posts={data.posts}/> -->
 			<p>wo</p>
+
 		</div>
 	{:else if activeItem === 'Top'}
 		<div class="tab-elements">
@@ -35,9 +36,5 @@
 
 
 <style>
-.tab-elements{
-
-	display: flex;
-	justify-content: center;
-}
+	@import "../../../static/css/layout.css";
 </style>

@@ -10,56 +10,20 @@
 
 </script>
 
-<div class="tabs">
+<div class="home-tab-elements">
     <ul>
         {#each items as item}
             <li on:click={() => dispatch('tabChange', item)} >
                 <div class:active={item === activeItem}>{item}</div>
             </li>           
-        
         {/each}
     </ul>
 </div>
 
 <style>
-.tabs {
-    margin-bottom: 40px;
-}
+    @import '../../../static/css/layout.css';
 
-ul{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
-}
-
-li{
-    margin: 0 16px;
-    font-size: 18px;
-    color: #555;
-    cursor: pointer;
-}
-
-
-.active {
-    color: green;
-    border-bottom: 2px solid green;
-}
 
 </style>
 
 
-<!-- 
-// Parent
-<Child {onMyEvent} />
-
-// Child
-<script>
-  let onMyEvent;
-
-  function myEvent() {
-      onMyEvent({ detail: 'some data' });
-  }
-</script>
-
-<button on:click={myEvent}>Click Me</button> -->

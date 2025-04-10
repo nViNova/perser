@@ -276,4 +276,36 @@ li {
 	.author {
 		color: var(--white);
 	}
+
+	.tabs {
+		margin-bottom: 40px;
+	}
+}
+
+.home-tab-component {
+	.tab-elements {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.home-tab-elements {
+	ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li {
+		margin: 0 16px;
+		font-size: 18px;
+		color: #555;
+		cursor: pointer;
+	}
+
+	.active {
+		color: green;
+		border-bottom: 2px solid green;
+	}
 }
