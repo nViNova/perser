@@ -1,5 +1,5 @@
 <script>
-	import HomeNews from '$lib/components/HomeNews.svelte';
+	import HomeTabs from '$lib/components/HomeTabs.svelte';
 	import { siteTitle } from '$lib/config';
 	let { data } = $props();
 
@@ -20,6 +20,7 @@
 	// 	 propsval: data.features
 	// 	}
 	// ];
+
 </script>
 
 <svelte:head>
@@ -39,15 +40,19 @@
 </div>
 
 <div class="home-body">
-	<section>
-		<h2>
-			Latest Articles
-		</h2>
-	</section>
+	
+	<HomeTabs />
 
-	<HomeNews posts={data.posts}/>
 </div>
+
 
 <!-- <div>
 	<Tabs items={items} />
 </div> -->
+
+	<!-- <section>
+		<h2>
+			Latest Articles
+		</h2>
+	</section> -->
+
