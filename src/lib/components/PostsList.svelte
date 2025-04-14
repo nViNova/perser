@@ -39,5 +39,6 @@
 				</aside>
 			{/if}
 		</li>
+		<hr class="solid">
 	{/each}
 </ul>

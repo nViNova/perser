@@ -14,9 +14,21 @@
 
 <main class="center">
 
-<h1>Articles.</h1>
+<h1 class="article-gradient">Articles</h1>
 
 <PostsList posts={data.posts} />
 
 <Pagination currentPage={1} totalPosts={data.total} />
 </main>
+
+<style>
+	.article-gradient {
+		color: #000000;
+		background-image: linear-gradient(45deg, #fce106 4%, #000000 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		text-align: center;
+	}
+</style>
