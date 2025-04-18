@@ -19,7 +19,7 @@
 					<h2>
 						{post.title}
 						<br />
-						{(new Date(post.date)).toDateString()}
+						<!-- {(new Date(post.date)).toDateString()} -->
 					</h2>
 				</a>
 			</article>
