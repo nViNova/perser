@@ -55,7 +55,7 @@
 					<div class="article-container">
 						{#each posts as post, inner_index}
 							{#if outer_index == 1 && inner_index > 0 && inner_index < MAX_ARTICLES}
-								<li class="">
+								<li class="grid-articles">
 									<div class="post-image">
 										<article>
 											<a href="/articles/{post.slug}">
@@ -94,7 +94,6 @@
 										{/if}
 									</div>
 								</li>
-								<hr class="solid" />
 							{/if}
 						{/each}
 					</div>

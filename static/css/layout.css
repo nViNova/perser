@@ -392,8 +392,15 @@ li {
 	}
 	.article-container {
 		display: grid;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto;
+		border: none;
+		margin: 0;
 		/*grid-template-columns: repeat(3);*/
+	}
+	.grid-articles {
+		border: none;
+		padding: 10px;
+		border-bottom-color: black;
 	}
 }
 /**/
