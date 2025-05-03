@@ -1,6 +1,7 @@
 ---
 type: feature
 title: 'Turing Women: Triumphs in Mending the Gap'
+isFeatured: True
 author:
   - Aneko Delfin
 editor:
