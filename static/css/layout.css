@@ -391,10 +391,9 @@ li {
 		border-top-right-radius: 15px;
 	}
 	.article-container {
-		/*display: grid;*/
-		/*grid-template-columns: auto auto;*/
 		display: grid;
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: auto auto auto auto;
+		/*grid-template-columns: repeat(3);*/
 	}
 }
 /**/

@@ -1,12 +1,13 @@
 <script>
 	import ListItems from './ListItems.svelte';
+	const MAX_ARTICLES = 4;
 	let { posts = [] } = $props();
 </script>
 
 <div class="latest-articles">
 	<ul class="home-posts-list">
 		{#each posts as post, outer_index}
-			{#if outer_index < 5}
+			{#if outer_index < 2}
 				{#if outer_index == 0}
 					<li class="initial-post">
 						<div class="post-image">
@@ -52,8 +53,8 @@
 					<hr class="solid" />
 				{:else}
 					<div class="article-container">
-						{#each posts as post}
-							{#if outer_index == 1}
+						{#each posts as post, inner_index}
+							{#if outer_index == 1 && inner_index > 0 && inner_index < MAX_ARTICLES}
 								<li class="">
 									<div class="post-image">
 										<article>
