@@ -1,6 +1,7 @@
 ---
 type: parsearch
 title: DOST broaches ‘ISIP Program,’ ‘Project Marayum’ for natural language research
+isFeatured: False
 author:
   - Abram Josh Marcelo
 editor:

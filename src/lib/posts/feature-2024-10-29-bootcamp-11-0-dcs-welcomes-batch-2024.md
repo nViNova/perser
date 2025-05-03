@@ -1,6 +1,7 @@
 ---
 type: feature
 title: 'Bootcamp 11.0: DCS welcomes Batch 2024'
+isFeatured: False
 author:
   - Eriene Galinato
   - Gabriel Inigo De Guzman

@@ -1,6 +1,7 @@
 ---
 type: parsearch
 title: test
+isFeatured: False
 author:
   - test author 1
 editor:
