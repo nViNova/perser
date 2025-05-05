@@ -3,24 +3,6 @@
 	import { siteTitle } from '$lib/config';
 	let { data } = $props();
 
-	// let items = [
-	// { label: "All",
-	// 	 value: 1,
-	// 	 component: PostsList,
-	// 	 propsval: data.posts
-	// 	},
-    // { label: "News",
-	// 	 value: 2,
-	// 	 component: PostsList,
-	// 	 propsval: data.news
-	// 	},
-	// { label: "Features",
-	// 	 value: 3,
-	// 	 component: PostsList,
-	// 	 propsval: data.features
-	// 	}
-	// ];
-
 </script>
 
 <svelte:head>
@@ -40,23 +22,5 @@
 </div>
 
 <div class="home-body">
-
 	<HomeTabs data={data}/>
-	
-	<!-- <PostsList posts={data.posts} /> -->
-
-
-
 </div>
-
-
-<!-- <div>
-	<Tabs items={items} />
-</div> -->
-
-	<!-- <section>
-		<h2>
-			Latest Articles
-		</h2>
-	</section> -->
-
