@@ -53,6 +53,7 @@
 						</div>
 					</li>
 				{:else}
+					<!-- Other posts -->
 					<div class="article-container">
 						{#each posts as post, inner_index}
 							{#if outer_index == 1 && inner_index > 0 && inner_index < MAX_ARTICLES}

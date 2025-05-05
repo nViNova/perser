@@ -28,7 +28,7 @@ collections:
           default: parsearch
         }
       - { label: Title, name: title, widget: string }
-      - { label: Featured Article?, name: isFeatured, widget: boolean, default: false}
+      - { label: Featured Article?, name: isFeatured, widget: boolean, default: false }
       - {
           label: Author/s,
           name: author,
