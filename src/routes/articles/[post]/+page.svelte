@@ -100,13 +100,13 @@
 			</aside>
 		{/if}
 
-		{#if isAuthorBlock}
+		<!-- {#if isAuthorBlock}
 			<h2>About the Author</h2>
 
 				{#each author as authr}
 					{authr}
 				{/each}
-		{/if}
+		{/if} -->
 
 		<script src="https://giscus.app/client.js"
         data-repo="nViNova/perser"
