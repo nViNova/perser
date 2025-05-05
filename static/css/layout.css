@@ -43,7 +43,7 @@ li {
 .posts-list-category {
 	list-style-type: none;
 	padding: 0;
-	margin	: 0;
+	margin: 0;
 
 	li {
 		margin-bottom: 1rem;
@@ -57,10 +57,10 @@ li {
 		margin-left: 0;
 		margin: 0;
 		padding-left: 0;	
-		
+    
 		li {
-			list-style-type: none;
-			padding: 0;	
+        list-style-type: none;
+        padding: 0;
 		}
 	}
 }
@@ -69,10 +69,10 @@ li {
 
 .posts-list {
 	list-style-type: none;
-	padding: 0;	
+	padding: 0;
 
 	li {
-		margin-bottom: 6rem;	
+		margin-bottom: 6rem;
 	}
 
 	img + h2 {
@@ -359,4 +359,138 @@ li {
 	}
 }
 
+.featured-articles,
+.dcs-articles,
+.latest-articles {
+	margin: 15px;
+}
 
+.home-posts-list {
+	list-style-type: none;
+
+	padding: 0;
+	a {
+		cursor: pointer;
+	}
+	li {
+		margin-bottom: 6rem;
+	}
+
+	img + h2 {
+		margin-top: 1rem;
+	}
+
+	a {
+		display: block;
+	}
+}
+
+.latest-articles {
+	img {
+		object-fit: contain;
+	}
+	.initial-post {
+		.post-image {
+			margin-right: 15px;
+			width: 50%;
+		}
+		display: flex;
+		background-color: gray;
+		border-top-right-radius: 25px;
+		.post-information {
+			padding: 15px;
+		}
+		@media (max-width: 900px) {
+			border-radius: 0px;
+			display: block;
+			.post-image {
+				margin-right: 15px;
+				width: 100%;
+				padding: 3%;
+			}
+		}
+	}
+
+	.article-container {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		border: none;
+		margin: 0;
+		.post-image {
+			object-fit: contain;
+			width: 100%;
+			height: auto;
+		}
+
+		@media (max-width: 900px) {
+			grid-template-columns: 50% 50%;
+		}
+
+		@media (max-width: 650px) {
+			grid-template-columns: auto;
+		}
+	}
+
+	.grid-articles {
+		border: none;
+		padding: 10px;
+	}
+}
+
+.featured-articles {
+	img {
+		object-fit: contain;
+		width: 100%;
+	}
+	.initial-post {
+		.post-image {
+			margin-right: 15px;
+		}
+		display: flex;
+		background-color: gray;
+		border-top-right-radius: 25px;
+		.post-information {
+			padding: 15px;
+		}
+		@media (max-width: 900px) {
+			border-radius: 0px;
+			display: block;
+			.post-image {
+				margin-right: 15px;
+				width: 100%;
+				padding: 3%;
+			}
+		}
+	}
+
+	.article-container {
+		display: block;
+	}
+
+	.grid-articles {
+		padding: 10px;
+		display: flex;
+		border-bottom: solid;
+		.post-image {
+			margin-right: 15px;
+			width: 100%;
+		}
+		.post-information {
+			align-items: center;
+			padding-left: 15px;
+		}
+		border-width: 2px;
+		@media (max-width: 900px) {
+			.post-image {
+				width: auto;
+			}
+			align-items: center;
+			display: block;
+		}
+	}
+}
+
+.view-more-button {
+	position: relative;
+	left: 50%;
+}

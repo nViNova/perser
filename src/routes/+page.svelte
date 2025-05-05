@@ -40,8 +40,12 @@
 </div>
 
 <div class="home-body">
+
+	<HomeTabs data={data}/>
 	
-	<HomeTabs />
+	<!-- <PostsList posts={data.posts} /> -->
+
+
 
 </div>
 
