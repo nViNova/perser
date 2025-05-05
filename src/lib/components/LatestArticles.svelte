@@ -1,7 +1,10 @@
-<script>
+<script lang="ts">
 	import ListItems from './ListItems.svelte';
-	const MAX_ARTICLES = 4;
+	let MAX_ARTICLES = $state(4);
 	let { posts = [] } = $props();
+	const viewMore = () => {
+		MAX_ARTICLES += 3;
+	};
 </script>
 
 <div class="latest-articles">
@@ -27,7 +30,6 @@
 							<a href="/articles/{post.slug}">
 								<h2>
 									{post.title}
-									<br />
 									<!-- {(new Date(post.date)).toDateString()} -->
 								</h2>
 							</a>
@@ -50,7 +52,6 @@
 							{/if}
 						</div>
 					</li>
-					<hr class="solid" />
 				{:else}
 					<div class="article-container">
 						{#each posts as post, inner_index}
@@ -101,6 +102,7 @@
 			{/if}
 		{/each}
 	</ul>
+	<button class="view-more" onclick={viewMore}>View More</button>
 </div>
 
 <style>
