@@ -273,6 +273,8 @@ li {
 .home-body {
 	display: flex;
 	flex-direction: column;
+	max-width: 60rem;
+	margin: 0rem auto;
 	/* background-color: var(--darker); */
 
 	section {
@@ -283,6 +285,11 @@ li {
 	h2 {
 		/* color: var(--white); */
 		margin: 2rem 0 2rem;
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1rem;
 	}
 }
 
@@ -395,7 +402,7 @@ li {
 			width: 50%;
 		}
 		display: flex;
-		background-color: gray;
+		/* background-color: gray; */
 		border-top-right-radius: 25px;
 		.post-information {
 			padding: 15px;
@@ -447,7 +454,7 @@ li {
 			margin-right: 15px;
 		}
 		display: flex;
-		background-color: gray;
+		/* background-color: gray; */
 		border-top-right-radius: 25px;
 		.post-information {
 			padding: 15px;
@@ -492,5 +499,5 @@ li {
 
 .view-more-button {
 	position: relative;
-	left: 50%;
+	left: 25rem;
 }
