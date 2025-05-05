@@ -45,7 +45,7 @@
 <style>
 	.category-gradient {
 		color: #000000;
-		background-image: linear-gradient(45deg, #fce106 4%, #000000 100%);
+		background-image: linear-gradient(45deg, #FBE106 4%, #14274A 100%);
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
