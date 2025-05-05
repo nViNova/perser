@@ -46,7 +46,7 @@ li {
 	margin	: 0;
 
 	li {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.posts-list-footer-categories {
@@ -55,7 +55,8 @@ li {
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: 0;
-		margin: 0;	
+		margin: 0;
+		padding-left: 0;	
 		
 		li {
 			list-style-type: none;
@@ -156,12 +157,14 @@ li {
 }
 
 .post-footer-categories a {
-	color: goldenrod;
+	color: #8D8926;
 	padding: 0.5rem 0.75rem;
 	font-family: var(--primaryFont);
-	font-weight: bold;
+	/* font-weight: bold; */
 	justify-content: left;
 	text-decoration: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 .post-footer-categories li {
