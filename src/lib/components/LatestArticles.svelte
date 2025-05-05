@@ -1,7 +1,8 @@
-<script lang="ts">
+<script>
 	import ListItems from './ListItems.svelte';
 	let MAX_ARTICLES = $state(4);
 	let { posts = [] } = $props();
+	const TOTAL_POSTS = posts.length;
 	const viewMore = () => {
 		MAX_ARTICLES += 3;
 	};
@@ -102,7 +103,11 @@
 			{/if}
 		{/each}
 	</ul>
-	<button class="view-more" onclick={viewMore}>View More</button>
+	{#if MAX_ARTICLES < TOTAL_POSTS}
+		<div class="view-more-button-container">
+			<button class="view-more-button" onclick={viewMore}>View More</button>
+		</div>
+	{/if}
 </div>
 
 <style>

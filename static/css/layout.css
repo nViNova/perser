@@ -403,6 +403,7 @@ li {
 			.post-image {
 				margin-right: 15px;
 				width: 100%;
+				padding: 3%;
 			}
 		}
 	}
@@ -430,7 +431,6 @@ li {
 	.grid-articles {
 		border: none;
 		padding: 10px;
-		border-bottom-color: black;
 	}
 }
 
@@ -455,6 +455,7 @@ li {
 			.post-image {
 				margin-right: 15px;
 				width: 100%;
+				padding: 3%;
 			}
 		}
 	}
@@ -484,4 +485,9 @@ li {
 			display: block;
 		}
 	}
+}
+
+.view-more-button {
+	position: relative;
+	left: 50%;
 }
