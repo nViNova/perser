@@ -15,11 +15,11 @@
 
 
 <svelte:head>
-	<title>Category: {category}</title>
+	<title>{category}</title>
 </svelte:head>
 
 <main class="center">
-<h1 class="category-gradient">Category: {category}</h1>
+<h1 class="category-gradient">{category}</h1>
 
 {#if posts.length}
 	<!-- <div>
@@ -49,7 +49,6 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-
 		text-align: center;
 	}
 </style>

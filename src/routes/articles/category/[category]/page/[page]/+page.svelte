@@ -21,7 +21,7 @@
 <!-- TODO: this is duplicated across multiple `+page.svelte` files -->
 {#if posts && posts.length}
 	<h1>
-		Category: {category}
+		{category}
 		<br />
 		<small>Posts {lowerBound}–{upperBound} of {totalPosts}</small>
 	</h1>

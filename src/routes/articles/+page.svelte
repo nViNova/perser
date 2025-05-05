@@ -26,7 +26,6 @@
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
-
 		text-align: center;
 	}
 </style>
