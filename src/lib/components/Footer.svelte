@@ -9,12 +9,12 @@
 			<li>
 				<a href="https://www.facebook.com/upparser/">Facebook</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="/">X (Twitter)</a>
 			</li>
 			<li>
 				<a href="/">YouTube</a>
-			</li>
+			</li> -->
 			<li>
 				<a href="https://medium.com/the-up-parser">Medium</a>
 			</li>

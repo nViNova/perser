@@ -16,9 +16,9 @@
 
 Feel free to reach us at our <a href="https://www.facebook.com/upparser/">Facebook Page</a>, at our email, dcsupparser@gmail.com, or fill up this form here!
 
-<Callout>This form does nothing! Website in development.</Callout>
+<!-- <Callout>This form does nothing! Website in development.</Callout> -->
 
-<form onsubmit={preventDefault(bubble('submit'))}>
+<form method="POST" action="/api/submit">
 	<div class="form-section">
 		<label for="name">Name</label>
 		<input type="text" id="name" placeholder="First name" />
